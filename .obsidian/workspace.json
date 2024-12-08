@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AD/1. Apuntes clase/2024-11-25 @ Tema 4.md",
+                "file": "SGE/1. Apuntes/Semana 1/Desarrollar módulos Odoo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2024-11-25 @ Tema 4"
+              "title": "Desarrollar módulos Odoo"
             }
           }
         ]
@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "8bdbff94108bdb03",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md",
+                "file": "PMM/3. Ejercicios/Tema 3/A1 - Cómo lograr la persistencia de los datos con Room.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 2024-11-25 @ Tema 3"
+              "title": "Enlaces entrantes de A1 - Cómo lograr la persistencia de los datos con Room"
             }
           },
           {
@@ -112,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md",
+                "file": "PMM/3. Ejercicios/Tema 3/A1 - Cómo lograr la persistencia de los datos con Room.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de 2024-11-25 @ Tema 3"
+              "title": "Enlaces salientes de A1 - Cómo lograr la persistencia de los datos con Room"
             }
           },
           {
@@ -139,13 +140,14 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md"
+                "file": "SGE/1. Apuntes/Semana 1/Desarrollar módulos Odoo.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de 2024-11-25 @ Tema 3"
+              "title": "Esquema de Desarrollar módulos Odoo"
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -164,19 +166,28 @@
   },
   "active": "f195d852043e17ae",
   "lastOpenFiles": [
-    "README.md",
-    "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md",
+    "SGE/1. Apuntes/Semana 1",
+    "SGE/2. Actividades",
+    "SGE/1. Apuntes",
+    "PMM/3. Ejercicios/Tema 3/A1.1 - Cómo lograr la persistencia de los datos con Room.md",
+    "SGE/1. Apuntes/Semana 1/Desarrollar módulos Odoo.md",
+    "AD/3. Actividades/Tema 4/Ejercicio 1 - Resuelto.md",
+    "AD/3. Actividades/Tema 4/Ejercicio 1 - Enunciado.md",
+    "AD/3. Actividades/Tema 4",
+    "AD/2. Apuntes/Tema 4/Tema 4 - ORM.md",
     "AD/1. Apuntes clase/2024-11-25 @ Tema 4.md",
+    "AD/2. Apuntes/Tema 4",
+    "README.md",
+    "PMM/3. Ejercicios/Tema 3/A1.3 - Práctica, Cómo compilar la app de Bus Schedule.md",
+    "PMM/3. Ejercicios/Tema 3/A1.2 - Cómo leer y actualizar datos con Room.md",
+    "PMM/3. Ejercicios/Sin título 1.md",
+    "PMM/3. Ejercicios/Tema 3",
+    "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md",
     "AD/3. Actividades",
     "AD/2. Apuntes",
     "AD/1. Apuntes clase",
     "Sin título.md",
     "PMM/3. Ejercicios",
-    "PMM/2. Apuntes",
-    "PMM/1. Apuntes clase",
-    "x",
-    "SGE",
-    "PMM",
-    "AD"
+    "PMM/2. Apuntes"
   ]
 }
