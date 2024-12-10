@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "92e7d9c0bbee0406",
+        "id": "8b08e9ed8a2c5f88",
         "type": "tabs",
         "children": [
           {
-            "id": "f195d852043e17ae",
+            "id": "e979b2297e79b576",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -140,10 +140,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SGE/1. Apuntes/Semana 1/Desarrollar módulos Odoo.md"
+                "file": "PMM/1. Apuntes clase/2024-12-09 @ Tema 3.md"
               },
               "icon": "lucide-list",
-              "title": "Esquema de Desarrollar módulos Odoo"
+              "title": "Esquema de 2024-12-09 @ Tema 3"
             }
           }
         ],
@@ -164,30 +164,32 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "f195d852043e17ae",
+  "active": "e979b2297e79b576",
   "lastOpenFiles": [
+    "AD/1. Apuntes clase/2024-12-09 @ Tema 4.md",
+    "AD/1. Apuntes clase/2024-11-25 @ Tema 4.md",
+    "AD/2. Apuntes/Tema 4/Tema 4 - ORM.md",
+    "PMM/1. Apuntes clase/2024-12-09 @ Tema 3.md",
+    "PMM/3. Ejercicios/Tema 3/A1.2 - Cómo leer y actualizar datos con Room.md",
+    "PMM/3. Ejercicios/Tema 3/A1.1 - Cómo lograr la persistencia de los datos con Room.md",
+    "PMM/3. Ejercicios/Tema 3/A1.3 - Práctica, Cómo compilar la app de Bus Schedule.md",
+    "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md",
+    "PMM/1. Apuntes clase/2024-11-25 @ Tema 3 1.md",
+    "SGE/1. Apuntes/Semana 1/Desarrollar módulos Odoo.md",
     "SGE/1. Apuntes/Semana 1",
     "SGE/2. Actividades",
     "SGE/1. Apuntes",
-    "PMM/3. Ejercicios/Tema 3/A1.1 - Cómo lograr la persistencia de los datos con Room.md",
-    "SGE/1. Apuntes/Semana 1/Desarrollar módulos Odoo.md",
     "AD/3. Actividades/Tema 4/Ejercicio 1 - Resuelto.md",
     "AD/3. Actividades/Tema 4/Ejercicio 1 - Enunciado.md",
     "AD/3. Actividades/Tema 4",
-    "AD/2. Apuntes/Tema 4/Tema 4 - ORM.md",
-    "AD/1. Apuntes clase/2024-11-25 @ Tema 4.md",
     "AD/2. Apuntes/Tema 4",
     "README.md",
-    "PMM/3. Ejercicios/Tema 3/A1.3 - Práctica, Cómo compilar la app de Bus Schedule.md",
-    "PMM/3. Ejercicios/Tema 3/A1.2 - Cómo leer y actualizar datos con Room.md",
     "PMM/3. Ejercicios/Sin título 1.md",
     "PMM/3. Ejercicios/Tema 3",
-    "PMM/1. Apuntes clase/2024-11-25 @ Tema 3.md",
     "AD/3. Actividades",
     "AD/2. Apuntes",
     "AD/1. Apuntes clase",
     "Sin título.md",
-    "PMM/3. Ejercicios",
-    "PMM/2. Apuntes"
+    "PMM/3. Ejercicios"
   ]
 }

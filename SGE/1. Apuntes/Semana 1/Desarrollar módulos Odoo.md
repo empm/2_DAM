@@ -35,22 +35,113 @@ sudo apt install postgresql postgresql-client
 
 - Instalar **pgAdmin**
 ```bash
-sudo apt install pgadmin3
+sudo apt install pgadmin4
 ```
 
 
 # Instalación PyCharm
+## Crear un nuevo proyecto
 
+1. Crear un nuevo proyecto
+2. Location: Crear una carpeta dentro de "odoo" llamada "Python"
+3. Marcar: Create a welcome script
+4. Interpreter type: Custom Environment
+5. Environment: Generated new
+6. Type: Virtualenv
+7. Base Python: +3.7
+8. Copiar `/home/usuario/odoo/?/odoo.conf` a `home/usuario/odoo/Python` o donde tengas la ruta del proyecto
+9. Crear una carpeta llamada `extra_addons` en la ruta del proyecto. `home/usuario/odoo/Python/extra_addons`
 
+## Modificar odoo.conf
+
+El archivo que hemos copiado a la ruta del proyecto, debemos:
+1. Escribir en `addons_path` la ruta de addons, `home/usuario/odoo/Python/extra_addons`
+2. Cambiar el puerto por: `8070`, ya que el `69` lo usa el servicio de odoo.
+
+# Configurar Interprete
+
+Una vez creado el proyecto y modificado el archivo de configuración, editamos el intérprete.
+- Clic en la esquina inferior derecha, donde pone la versión de Python > Interpreter Settings.
+- Si está activado, podemos comprobarlo desde la terminal de abajo a la izquierda.
+	- Debe poner (venv) antes de nuestro usuario.
 
 # Instalación Odoo
 
+
+# Instalación Postgre
+
+```bash
+sudo apt install postgresql postgresql-client
+```
 
 ```bash
 sudo -u postgres createuser -sP odoo
 ```
 
-# Instalación Postgre
+
+
+```bash
+sudo su odoo
+```
+
+
 
 
 # Instalación 
+
+- Crear usuario en Linux
+```bash
+sudo useradd -m -d /opt/odoo -U -r -s /bin/bash odoo
+```
+
+```bash
+sudo -u postgres createuser -sP odoo
+``` 
+
+```bash
+sudo su odoo
+``` 
+
+```bash
+git clone https://www.github.com/odoo/odoo --depth 1 --branch 13.0 /opt/odoo/odoo
+``` 
+
+```bash
+cd /opt/odoo/
+```
+
+```bash
+python3 -m venv odoo-venv
+``` 
+
+```bash
+source odoo-venv/bin/activate
+``` 
+
+```bash
+pip3 install wheel
+``` 
+
+```bash
+pip3 install -r odoo/requirements.txt
+``` 
+
+```bash
+sudo vim /etc/odoo.conf
+``` 
+
+```
+[Options]
+;Password 
+admin_password = odoo
+db_host = localhost
+db_port = 5432
+dp_user = odoo
+addons_path = /opt/odoo/odoo/addons, /opt/odoo/odoo-custom-addons
+``` 
+
+```bash
+./odoo-bin -c /etc/odoo.conf
+``` 
+
+Acceder 
