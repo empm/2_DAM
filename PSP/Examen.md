@@ -1,0 +1,3 @@
+- [ ] Ejercicios de entrega
+- [ ] pedirle a Jaime examen
+- [ ] 
