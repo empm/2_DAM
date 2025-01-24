@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SGE/1. Apuntes/0. Explicación/4. Ejercicios vista.md",
+                "file": "AD/2. Apuntes/Tema 5/0. Step by Step.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SGE/1. Apuntes/0. Explicación/4. Ejercicios vista.md",
+                "file": "AD/2. Apuntes/Tema 5/0. Step by Step.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SGE/1. Apuntes/0. Explicación/4. Ejercicios vista.md",
+                "file": "AD/2. Apuntes/Tema 5/0. Step by Step.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SGE/1. Apuntes/0. Explicación/4. Ejercicios vista.md"
+                "file": "AD/2. Apuntes/Tema 5/0. Step by Step.md"
               }
             }
           }
@@ -149,43 +149,51 @@
   },
   "active": "8a073d8f4190e886",
   "lastOpenFiles": [
-    "SGE/1. Apuntes/0. Explicación/3. Explicación vista.md",
-    "SGE/1. Apuntes/0. Explicación/2. Ejercicios modelo.md",
+    "x/Pasted image 20250124180625.png",
+    "AD/2. Apuntes/Tema 5/0. Step by Step.md",
+    "x/Pasted image 20250124190907.png",
+    "x/Pasted image 20250124190904.png",
+    "x/Pasted image 20250124185944.png",
+    "x/Pasted image 20250124185700.png",
+    "x/Pasted image 20250124185342.png",
+    "x/Pasted image 20250124185245.png",
+    "x/Pasted image 20250124185040.png",
+    "x/Pasted image 20250124184634.png",
+    "x/Pasted image 20250124183956.png",
+    "x/Pasted image 20250124181454.png",
+    "AD/2. Apuntes/Tema 5/2. Instalación Spring Tools.md",
+    "AD/2. Apuntes/Tema 5/1. API REST con Spring.md",
+    "PMM/1. Apuntes clase/2024-12-09 @ Tema 3.md",
     "SGE/1. Apuntes/0. Explicación/1. Explicación modelo.md",
+    "SGE/1. Apuntes/0. Explicación/3. Explicación vista.md",
     "SGE/1. Apuntes/0. Explicación/4. Ejercicios vista.md",
-    "SGE/1. Apuntes/0. Explicación",
-    "SGE/1. Apuntes/2. Inicio - El modelo/1. Campos básicos.md",
-    "SGE/1. Apuntes/2. Inicio - El modelo/Apuntes.md",
-    "SGE/1. Apuntes/2. Inicio - El modelo/chatgpt.md",
+    "SGE/1. Apuntes/0. Explicación/2. Ejercicios modelo.md",
+    "AD/3. Actividades/Tema 4/Ejercicio 1 - Resuelto.md",
+    "AD/3. Actividades/Tema 4/Ejercicio 1 - Enunciado.md",
+    "().md",
+    "AD/1. Apuntes clase/2025-01-20 @ Tema 5.md",
+    "AD/2. Apuntes/Tema 5",
+    "AD/1. Apuntes clase/2024-12-09 @ Tema 4.md",
+    "SGE/3. Todo/EXAMEN.md",
     "SGE/1. Apuntes/5. Curso YouTube/Apuntes.md",
-    "SGE/1. Apuntes/carpeta sin título",
+    "SGE/1. Apuntes/4. El controlador/3.3. api.onchange.md",
+    "SGE/1. Apuntes/4. El controlador/3.1. api.dependes.md",
+    "SGE/1. Apuntes/4. El controlador/3.2 api.constrains.md",
+    "SGE/1. Apuntes/0. Explicación",
     "SGE/1. Apuntes/1. Desarrollar Módulos/1. Instalar entorno Odoo.md",
     "SGE/1. Apuntes/1. Desarrollar Módulos/2. Desarrollar módulos de Odoo.md",
     "SGE/1. Apuntes/5. Curso YouTube",
     "DI/Examen.md",
     "DI",
-    "SGE/3. Todo/EXAMEN.md",
     "SGE/3. Todo",
     "PSP/Examen.md",
     "PSP",
     "PMM/4. Examane/EXAMEN.md",
     "PMM/4. Examane",
-    "SGE/1. Apuntes/4. El controlador/3.1. api.dependes.md",
-    "SGE/1. Apuntes/4. El controlador/3.2 api.constrains.md",
     "SGE/1. Apuntes/4. El controlador/1. El controlador.md",
     "SGE/1. Apuntes/4. El controlador/2. Métodos comunes.md",
-    "SGE/1. Apuntes/4. El controlador/3.3. api.onchange.md",
-    "SGE/1. Apuntes/4. El controlador/3. Decoradores.md",
-    "SGE/1. Apuntes/4. El controlador/3.1.0 Código fuente/3.2.1 Código fuente.md",
-    "SGE/1. Apuntes/4. El controlador/3.1.0 Código fuente/3.1.1. Código fuente.md",
     "SGE/1. Apuntes/4. El controlador/3.1.0 Código fuente",
     "SGE/1. Apuntes/4. El controlador",
-    "SGE/1. Apuntes/3. La vista/1.1. Vista de lista.md",
-    "SGE/1. Apuntes/3. La vista/2. Acciones.md",
-    "SGE/1. Apuntes/3. La vista/1. Vista.md",
-    "SGE/1. Apuntes/3. La vista",
-    "x/Pasted image 20250102190641.png",
-    "x/Captura de pantalla 2025-01-02 a las 20.22.37.png",
-    "x/Pasted image 20250102190616.png"
+    "SGE/1. Apuntes/3. La vista"
   ]
 }

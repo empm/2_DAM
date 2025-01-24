@@ -1,3 +1,6 @@
 - [ ] Hacer módulos de ejemplo
-- [ ] Saber en que archivo esta cada cosa
+- [x] Saber en que archivo esta cada cosa
+- [ ] Mirar herencia
+- [ ] Mirar los campos api.depends y demás
+- [ ] 
 
