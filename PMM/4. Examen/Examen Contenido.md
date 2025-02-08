@@ -1,0 +1,267 @@
+
+1. Definición de una entidad.
+2. Creación de un DAO.
+3. Implementación de clases con métodos de acceso.
+4. Inicialización de un `DataStore`.
+5. Pruebas unitarias para las funciones.
+6. Pruebas unitarias para la base de datos usando Room.
+7. Pruebas unitarias para el `DataStore`.
+
+---
+
+## 1. Definición de una Entidad
+
+Vamos a definir una entidad llamada `User`, que representa a un usuario en nuestra base de datos.
+
+```kotlin
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "users")
+data class User(
+    @PrimaryKey val id: Int,
+    val name: String,
+    val age: Int
+)
+```
+
+### Explicación:
+- `@Entity`: Indica que esta clase es una entidad de Room y se mapeará a una tabla en la base de datos.
+- `@PrimaryKey`: Marca el campo `id` como la clave primaria de la tabla.
+- `tableName`: Especifica el nombre de la tabla en la base de datos.
+
+---
+
+## 2. Creación del DAO
+
+El DAO (Data Access Object) define los métodos para acceder a la base de datos.
+
+```kotlin
+import androidx.room.Dao
+import androidx.room.Insert
+import androidx.room.Query
+
+@Dao
+interface UserDao {
+
+    @Insert
+    suspend fun insert(user: User)
+
+    @Query("SELECT * FROM users")
+    suspend fun getAllUsers(): List<User>
+
+    @Query("SELECT * FROM users WHERE id = :userId")
+    suspend fun getUserById(userId: Int): User?
+
+    @Query("DELETE FROM users")
+    suspend fun deleteAllUsers()
+}
+```
+
+### Explicación:
+- `@Dao`: Indica que esta interfaz es un DAO.
+- `@Insert`: Método para insertar un usuario en la base de datos.
+- `@Query`: Permite ejecutar consultas SQL personalizadas.
+- `suspend`: Indica que estas funciones son corrutinas y deben ejecutarse en un contexto adecuado.
+
+---
+
+## 3. Implementación de Clases con Métodos de Acceso
+
+Creamos una clase `UserRepository` que actúa como una capa de abstracción sobre el `UserDao`.
+
+```kotlin
+class UserRepository(private val userDao: UserDao) {
+
+    suspend fun insert(user: User) {
+        userDao.insert(user)
+    }
+
+    suspend fun getAllUsers(): List<User> {
+        return userDao.getAllUsers()
+    }
+
+    suspend fun getUserById(userId: Int): User? {
+        return userDao.getUserById(userId)
+    }
+
+    suspend fun deleteAllUsers() {
+        userDao.deleteAllUsers()
+    }
+}
+```
+
+### Explicación:
+- `UserRepository`: Proporciona métodos de alto nivel para interactuar con la base de datos.
+- Encapsula la lógica de acceso a datos, lo que facilita las pruebas y el mantenimiento.
+
+---
+
+## 4. Inicialización de un `DataStore`
+
+El `DataStore` se utiliza para almacenar preferencias simples, como un valor booleano que indica si el usuario ha completado un tutorial.
+
+```kotlin
+import androidx.datastore.preferences.core.booleanPreferencesKey
+import androidx.datastore.preferences.core.edit
+import androidx.datastore.preferences.preferencesDataStore
+import kotlinx.coroutines.flow.Flow
+import kotlinx.coroutines.flow.map
+
+class UserPreferencesRepository(private val dataStore: androidx.datastore.core.DataStore<androidx.datastore.preferences.core.Preferences>) {
+
+    companion object {
+        val TUTORIAL_COMPLETED = booleanPreferencesKey("tutorial_completed")
+    }
+
+    val tutorialCompleted: Flow<Boolean> = dataStore.data
+        .map { preferences ->
+            preferences[TUTORIAL_COMPLETED] ?: false
+        }
+
+    suspend fun setTutorialCompleted(completed: Boolean) {
+        dataStore.edit { preferences ->
+            preferences[TUTORIAL_COMPLETED] = completed
+        }
+    }
+}
+```
+
+### Explicación:
+- `booleanPreferencesKey`: Define una clave para almacenar un valor booleano.
+- `dataStore.data`: Flujo que emite las preferencias actuales.
+- `edit`: Método para modificar las preferencias.
+
+---
+
+## 5. Pruebas Unitarias para las Funciones
+
+Escribimos pruebas unitarias para las funciones en `UserRepository`.
+
+```kotlin
+import androidx.room.Room
+import androidx.test.core.app.ApplicationProvider
+import androidx.test.ext.junit.runners.AndroidJUnit4
+import kotlinx.coroutines.runBlocking
+import org.junit.After
+import org.junit.Before
+import org.junit.Test
+import org.junit.runner.RunWith
+import java.io.IOException
+
+@RunWith(AndroidJUnit4::class)
+class UserRepositoryTest {
+
+    private lateinit var userDao: UserDao
+    private lateinit var db: AppDatabase
+    private lateinit var userRepository: UserRepository
+
+    @Before
+    fun createDb() {
+        db = Room.inMemoryDatabaseBuilder(
+            ApplicationProvider.getApplicationContext(),
+            AppDatabase::class.java
+        ).allowMainThreadQueries().build()
+        userDao = db.userDao()
+        userRepository = UserRepository(userDao)
+    }
+
+    @After
+    @Throws(IOException::class)
+    fun closeDb() {
+        db.close()
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun insertAndGetUser() = runBlocking {
+        val user = User(1, "John Doe", 25)
+        userRepository.insert(user)
+        val userById = userRepository.getUserById(1)
+        assert(userById != null)
+        assert(userById?.name == "John Doe")
+    }
+
+    @Test
+    @Throws(Exception::class)
+    fun deleteAllUsers() = runBlocking {
+        val user = User(1, "John Doe", 25)
+        userRepository.insert(user)
+        userRepository.deleteAllUsers()
+        val users = userRepository.getAllUsers()
+        assert(users.isEmpty())
+    }
+}
+```
+
+### Explicación:
+- `Room.inMemoryDatabaseBuilder`: Crea una base de datos en memoria para pruebas.
+- `runBlocking`: Ejecuta corrutinas en el hilo principal para pruebas.
+- Las pruebas verifican la inserción, recuperación y eliminación de usuarios.
+
+---
+
+## 6. Pruebas Unitarias para la Base de Datos usando Room
+
+Las pruebas unitarias para la base de datos ya están incluidas en el paso anterior (`UserRepositoryTest`).
+
+---
+
+## 7. Pruebas Unitarias para el `DataStore`
+
+Escribimos pruebas unitarias para el `DataStore`.
+
+```kotlin
+import androidx.datastore.core.DataStore
+import androidx.datastore.preferences.core.Preferences
+import androidx.datastore.preferences.core.edit
+import androidx.test.core.app.ApplicationProvider
+import androidx.test.ext.junit.runners.AndroidJUnit4
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.runBlocking
+import org.junit.Before
+import org.junit.Test
+import org.junit.runner.RunWith
+
+@RunWith(AndroidJUnit4::class)
+class UserPreferencesRepositoryTest {
+
+    private lateinit var dataStore: DataStore<Preferences>
+    private lateinit var userPreferencesRepository: UserPreferencesRepository
+
+    @Before
+    fun createDataStore() {
+        dataStore = ApplicationProvider.getApplicationContext<android.content.Context>().dataStore
+        userPreferencesRepository = UserPreferencesRepository(dataStore)
+    }
+
+    @Test
+    fun testTutorialCompleted() = runBlocking {
+        userPreferencesRepository.setTutorialCompleted(true)
+        val tutorialCompleted = userPreferencesRepository.tutorialCompleted.first()
+        assert(tutorialCompleted)
+    }
+}
+```
+
+### Explicación:
+- Verifica que el valor de `tutorialCompleted` se almacena y recupera correctamente.
+
+---
+
+## Resumen
+
+Este ejemplo cubre todos los puntos que mencionaste:
+
+8. Definición de una entidad (`User`).
+9. Creación de un DAO (`UserDao`).
+10. Implementación de clases con métodos de acceso (`UserRepository`).
+11. Inicialización de un `DataStore` (`UserPreferencesRepository`).
+12. Pruebas unitarias para las funciones (`UserRepositoryTest`).
+13. Pruebas unitarias para la base de datos usando Room (`UserRepositoryTest`).
+14. Pruebas unitarias para el `DataStore` (`UserPreferencesRepositoryTest`).
+
+¡Espero que este ejemplo te sea útil para prepararte para el examen! ¡Buena suerte! 🚀
+``` 
+
+Este formato Markdown es más legible y organizado, y las explicaciones adicionales te ayudarán a entender mejor cada parte del código. ¡Éxito en tu examen! 😊

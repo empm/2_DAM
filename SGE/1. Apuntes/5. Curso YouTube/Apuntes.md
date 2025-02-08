@@ -77,10 +77,10 @@ Las interfaces ya están creadas, solo hay que llamarlas. Como por ejemplo, una 
 
 ``` xml
 # Inicio de una vista
-<record model="ir.ui.view" id="view_id">
+<record model="ir.ui.view" id="nombredelmodulo.modelo_list">
 # metadatos
   <field name="name">Nom_de_la_vista</field>
-  <field name="model">Objecte_al_que_fa_referència</field>
+  <field name="model">Modulo.clase</field>
   <field name="arch" type="xml">
    	<!-- Aquí va el contingut específic de la vista->
     <VIEW_TYPE>
@@ -90,3 +90,6 @@ Las interfaces ya están creadas, solo hay que llamarlas. Como por ejemplo, una 
   </field>
 </record>
 ```
+
+
+La vista de formulario, sirve para que puedas crear o añadir campos

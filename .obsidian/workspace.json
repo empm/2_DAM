@@ -4,31 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "7e307b743829d708",
+        "id": "7981ee1717a52fcd",
         "type": "tabs",
         "children": [
           {
-            "id": "8a073d8f4190e886",
+            "id": "7c604e0b273b7e07",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PMM/2. Apuntes/0. Cómo interactuar con una base de datos con Room.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "974ec4b724153c31",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "PMM/2. Apuntes/3.1. Definir una Entidad.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -97,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PMM/2. Apuntes/0. Cómo interactuar con una base de datos con Room.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PMM/2. Apuntes/0. Cómo interactuar con una base de datos con Room.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -136,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "PMM/2. Apuntes/0. Cómo interactuar con una base de datos con Room.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -146,8 +126,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,44 +138,44 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "8a073d8f4190e886",
+  "active": "7c604e0b273b7e07",
   "lastOpenFiles": [
-    "PMM/2. Apuntes/7.4 Flow.md",
-    "PMM/2. Apuntes/0. Cómo interactuar con una base de datos con Room.md",
-    "PMM/2. Apuntes/3.3. Configurar la base de datos (AppDatabase).md",
-    "PMM/2. Apuntes/Step by Step ROOM.md",
-    "PMM/2. Apuntes/3.2. Crear el DAO.md",
-    "PMM/2. Apuntes/3.1. Definir una Entidad.md",
-    "PMM/2. Apuntes/2. Configuración inicial.md",
-    "PMM/2. Apuntes/2.1 Flow.md",
-    "PMM/2. Apuntes/2. Cómo crear una base de datos en Android.md",
-    "PMM/4. Examen/0. Dependencias.md",
-    "PMM/4. Examen/3. Test.md",
-    "PMM/4. Examen/3.1 Introducción a las Pruebas con @Test y assert.md",
-    "PMM/4. Examen/EXAMEN.md",
-    "PMM/2. Apuntes/1. Estructura del proyecto.md",
-    "PMM/2. Apuntes/3. Crear la base de datos.md",
-    "PMM/2. Apuntes/Sin título.md",
-    "PMM/2. Apuntes/2. Cómo crear una base de datos en Android 1.md",
-    "PMM/2. Apuntes/2. Cómo crear una base de datos en Android 1 1 1.md",
-    "PMM/2. Apuntes/2. Cómo crear una base de datos en Android 1 1.md",
-    "PMM/2. Apuntes/2. Base de datos.md",
-    "PMM/1. Apuntes clase/2025-02-03 @ Tema.md",
-    "AD/1. Apuntes clase/2025-02-03 @ Tema 6.md",
+    "AD/2. Apuntes/Ale/AD/Tema 6/Entidades con MongoDB.md",
+    "AD/2. Apuntes/Ale/AD/Tema 6/Conexion a Mongo desde Java.md",
+    "AD/2. Apuntes/Ale/AD/Tema 6",
+    "AD/2. Apuntes/Ale/AD/Tema 5/2. Step by Step.md",
+    "AD/2. Apuntes/Ale/AD/Tema 5/1. API REST con Spring.md",
+    "AD/2. Apuntes/Ale/AD/Tema 5/0. Instalación Spring Tools.md",
+    "AD/2. Apuntes/Ale/AD/Tema 5",
+    "AD/2. Apuntes/Ale/AD/Tema 4/Tema 4 - ORM.md",
+    "AD/2. Apuntes/Ale/AD/Tema 4",
+    "AD/2. Apuntes/Ale/AD/3. Actividades/Tema 4/Ejercicio 1 - Resuelto.md",
+    "AD/2. Apuntes/Ale/AD/3. Actividades/Tema 4/Ejercicio 1 - Enunciado.md",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 6/Entidades con MongoDB.md",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 6/Conexion a Mongo desde Java.md",
+    "AD/2. Apuntes/Ale/AD/1. Apuntes clase/2024-11-25 @ Tema 4.md",
+    "AD/2. Apuntes/Ale/AD/1. Apuntes clase/2024-12-09 @ Tema 4.md",
+    "AD/2. Apuntes/Ale/AD/1. Apuntes clase/2025-01-20 @ Tema 5.md",
+    "AD/2. Apuntes/Tema 6/MongoDB.md",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 5/2. Step by Step.md",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 5/1. API REST con Spring.md",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 5/0. Instalación Spring Tools.md",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 4/Tema 4 - ORM.md",
+    "AD/2. Apuntes/Ale/AD/3. Actividades/Tema 4",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 6",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 5",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes/Tema 4",
+    "AD/2. Apuntes/Ale/AD/3. Actividades",
+    "AD/2. Apuntes/Ale/AD/2. Apuntes",
+    "AD/2. Apuntes/Ale/AD/1. Apuntes clase",
+    "PMM/4. Examen/Examen Contenido.md",
     "AD/2. Apuntes/Tema 5/1. API REST con Spring.md",
     "AD/2. Apuntes/Tema 5/0. Step by Step.md",
-    "AD/1. Apuntes clase/2025-01-27 @ Tema 5.md",
-    "PMM/1. Apuntes clase/2025-01-27 @ Tema.md",
-    "SGE/1. Apuntes/6. Proyecto plantilla/views.txt",
-    "SGE/1. Apuntes/6. Proyecto plantilla/model.txt",
-    "SGE/1. Apuntes/6. Proyecto plantilla/maniferst.txt",
-    "SGE/1. Apuntes/6. Proyecto plantilla",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/newproyect/views/views.xml",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/newproyect/views/templates.xml",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/newproyect/security/ir.model.access.csv",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/newproyect/models/models.py",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/newproyect/models/__init__.py",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/newproyect/demo/demo.xml",
+    "AD/2. Apuntes/Tema 5/3. Metodos Service.md",
+    "AD/2. Apuntes/Tema 5/2. Instalación Spring Tools.md",
+    "AD/1. Apuntes clase/2025-02-03 @ Tema 6.md",
+    "AD/1. Apuntes clase/2024-11-25 @ Tema 4.md",
+    "SGE/1. Apuntes/1. Desarrollar Módulos/1. Instalar entorno Odoo.md",
     "x/Pasted image 20250124180625.png",
     "x/Pasted image 20250124190907.png",
     "x/Pasted image 20250124190904.png",
