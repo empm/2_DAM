@@ -6,17 +6,11 @@
 <artifactId>mongodb-driver-sync</artifactId>
 <version>4.11.1</version>
 </dependency>
-
-<dependency>
-    <groupId>org.slf4j</groupId>
-    <artifactId>slf4j-simple</artifactId>
-    <version>1.7.36</version>
-</dependency>
 ```
 
 # **🔗 Conectando con MongoDB en Java**
 
-## 📌 1. ¿Cómo conectar con MongoDB?
+## 1. ¿Cómo conectar con MongoDB?
 
  La conexión básica se hace con:
 
@@ -27,7 +21,7 @@ MongoClient client = MongoClients.create();
 Si no pasamos argumentos, se conecta automáticamente a **mongodb://localhost:27017**, que es el puerto estándar de MongoDB en nuestra máquina.
 
 
-## ⚙️ 2. Personalizando la Conexión
+## 2. Personalizando la Conexión
 
 Podemos configurar la conexión con diferentes opciones, como:
 
@@ -42,7 +36,7 @@ MongoClient client = MongoClients.create("mongodb://usuario:contraseña@servidor
 ```
 
 
-## ❌ 3. Cerrar la Conexión
+## 3. Cerrar la Conexión
 
 Cuando terminamos de usar la base de datos, **siempre** debemos cerrar la conexión para liberar recursos:
 
@@ -59,7 +53,7 @@ Esto es importante porque si dejamos conexiones abiertas sin usarlas, podríamos
 
 En este apartado aprenderemos cómo manejar bases de datos y colecciones en MongoDB usando Java. Vamos a desglosar cada punto de manera clara y sencilla.
 
-## 📂 1. Obtener los nombres de las bases de datos disponibles
+## 1. Obtener los nombres de las bases de datos disponibles
 
 Para listar todas las bases de datos en un servidor MongoDB, usamos:
 
@@ -75,7 +69,7 @@ for (String name : dbNames) {
 > Es una estructura iterable de MongoDB que nos permite recorrer los resultados de una consulta.
 
 
-## 📌 2. Obtener una base de datos específica  
+## 2. Obtener una base de datos específica  
 
 Para acceder a una base de datos en MongoDB, usamos:
 
@@ -96,7 +90,7 @@ Una vez tenemos la base de datos, podemos usar varios métodos útiles:
 ⚠️ **Importante**: MongoDB **no crea la base de datos** hasta que insertamos un documento en alguna colección.
 
 
-## 📂 3. Obtener una colección
+## 3. Obtener una colección
  
 Para acceder a una colección dentro de una base de datos:
 
@@ -108,7 +102,7 @@ MongoCollection<Document> col = db.getCollection("movies");
 >Si la colección no existe, **MongoDB la creará automáticamente** cuando insertes el primer documento.
 
 
-## 🔄 4. Operaciones CRUD en una colección
+## 4. Operaciones CRUD en una colección
 
 La clase `MongoCollection<Document>` nos permite realizar operaciones **CRUD** (Create, Read, Update, Delete):
 
@@ -125,7 +119,7 @@ La clase `MongoCollection<Document>` nos permite realizar operaciones **CRUD** (
 |col.countDocuments()|Cuenta la cantidad de documentos en la colección.|
 
 
-## 📜 5. Trabajando con Documentos (org.bson.Document)
+## 5. Trabajando con Documentos (org.bson.Document)
 
 Un documento en MongoDB es similar a un objeto JSON. Para crearlo:
 
@@ -164,7 +158,7 @@ System.out.println("Título: " + titulo + ", Año: " + año);
 ```
 
 
-## 📌 6. Convertir Documento a Texto
+## 6. Convertir Documento a Texto
 
 Para imprimir el documento en formato JSON:
 
@@ -217,11 +211,11 @@ public class MongoDBExample {
 
 # **🚀 Inserción y Consulta de Datos en MongoDB con Java**
 
-  ## **🔹 1. Insertar Documentos en MongoDB**
+## 1. Insertar Documentos en MongoDB
 
 Para agregar datos en una colección, usamos `insertOne` (para un solo documento) o `insertMany` (para varios).
 
-### 📌 Insertar una Película en la Base de Datos mflix
+📌 Insertar una Película en la Base de Datos mflix
 
 ```java
 import com.mongodb.client.*;
@@ -249,7 +243,7 @@ public class MongoInsertExample {
 }
 ```
 
-### 📌 Insertar Múltiples Películas
+📌 Insertar Múltiples Películas
 
 ``` java
 Document movie2 = new Document()
@@ -268,15 +262,14 @@ col.insertMany(Arrays.asList(movie2, movie3));
 System.out.println("Múltiples películas insertadas.");
 ```
 
-## **🔍 2. Buscar Documentos con find()**
+
+## 2. Buscar Documentos con find()
 
 Para recuperar datos, usamos find(). Si no pasamos parámetros, devuelve **todos los documentos**.
 
-  
-
 **📌 Obtener Todas las Películas**
 
-```
+```java
 FindIterable<Document> result = col.find();
 for (Document doc : result) {
     System.out.println(doc.toJson());
@@ -285,43 +278,40 @@ for (Document doc : result) {
 
 **📌 Buscar una Película Específica**
 
-```
+```java
 import com.mongodb.client.model.Filters;
 
 Document jurassicWorld = col.find(Filters.eq("title", "Jurassic World")).first();
 System.out.println(jurassicWorld.toJson());
 ```
 
-**🎯 3. Aplicando Filtros en las Consultas**
-
-  
+## 3. Aplicando Filtros en las Consultas
 
 Podemos hacer consultas más avanzadas con **filtros** (Filters).
 
-|**Filtro**|**Descripción**|
-|---|---|
-|eq("campo", valor)|Busca documentos con un campo que tenga cierto valor.|
-|gte("campo", valor)|Busca documentos donde el campo sea **mayor o igual** al valor.|
-|lte("campo", valor)|Busca documentos donde el campo sea **menor o igual** al valor.|
-|exists("campo", false)|Busca documentos que **no** tengan un campo.|
-|regex("campo", "patrón")|Busca documentos que coincidan con una expresión regular.|
-|and(filtro1, filtro2)|Combinación de filtros con **Y**.|
-|or(filtro1, filtro2)|Combinación de filtros con **O**.|
+| **Filtro**               | **Descripción**                                                 |
+| ------------------------ | --------------------------------------------------------------- |
+| eq("campo", valor)       | Busca documentos con un campo que tenga cierto valor.           |
+| gte("campo", valor)      | Busca documentos donde el campo sea **mayor o igual** al valor. |
+| lte("campo", valor)      | Busca documentos donde el campo sea **menor o igual** al valor. |
+| exists("campo", false)   | Busca documentos que **no** tengan un campo.                    |
+| regex("campo", "patrón") | Busca documentos que coincidan con una expresión regular.       |
+| and(filtro1, filtro2)    | Combinación de filtros con **Y**.                               |
+| or(filtro1, filtro2)     | Combinación de filtros con **O**.                               |
+|                          |                                                                 |
 
-**📌 Ejemplos de Búsquedas Avanzadas**
-
-  
+#### **📌 Ejemplos de Búsquedas Avanzadas**
 
 1️⃣ **Películas del año 2016**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.eq("year", 2016));
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
 2️⃣ **Películas entre 2015 y 2016 (inclusive)**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.and(
     Filters.gte("year", 2015),
     Filters.lte("year", 2016)
@@ -331,28 +321,28 @@ result.forEach(doc -> System.out.println(doc.toJson()));
 
 3️⃣ **Películas donde year es un string**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.type("year", "string"));
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
 4️⃣ **Películas sin el campo plot**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.exists("plot", false));
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
 5️⃣ **Películas rodadas en España**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.eq("countries", "Spain"));
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
 6️⃣ **Películas con un solo actor y del género “Biography”**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.and(
     Filters.size("cast", 1),
     Filters.eq("genre", "Biography")
@@ -362,21 +352,21 @@ result.forEach(doc -> System.out.println(doc.toJson()));
 
 7️⃣ **Películas en inglés y español**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.all("languages", Arrays.asList("English", "Spanish")));
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
 8️⃣ **Películas dirigidas por Spielberg (búsqueda con regex)**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.regex("director", "Spielberg"));
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
 9️⃣ **Películas dirigidas por Spielberg O Kubrick**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.or(
     Filters.regex("director", "Spielberg"),
     Filters.regex("director", "Kubrick")
@@ -386,7 +376,7 @@ result.forEach(doc -> System.out.println(doc.toJson()));
 
 🔟 **Películas con más de 7 premios y al menos 9 en IMDB**
 
-```
+```java
 FindIterable<Document> result = col.find(Filters.and(
     Filters.gt("awards.wins", 7),
     Filters.gte("imdb.rating", 9)
@@ -394,9 +384,9 @@ FindIterable<Document> result = col.find(Filters.and(
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
-**🎯 4. Proyección: Seleccionar Campos Específicos**
 
-  
+## 4. Proyección: Seleccionar Campos Específicos
+
 
 Por defecto, find() devuelve todos los campos. Podemos usar **proyección** para elegir qué mostrar.
 
@@ -404,7 +394,7 @@ Por defecto, find() devuelve todos los campos. Podemos usar **proyección** para
 
 **📌 Solo título, año y directores, ocultando _id**
 
-```
+```java
 Document proj = new Document("title", 1)
         .append("year", 1)
         .append("director", 1)
@@ -416,7 +406,7 @@ result.forEach(doc -> System.out.println(doc.toJson()));
 
 **📌 Mostrar todo excepto directors y fullplot**
 
-```
+```java
 Document proj = new Document("directors", 0)
         .append("fullplot", 0);
 
@@ -424,28 +414,10 @@ FindIterable<Document> result = col.find().projection(proj);
 result.forEach(doc -> System.out.println(doc.toJson()));
 ```
 
-**✅ Resumen**
+
+## **✅ Resumen**
 
 1. **Insertar datos** con insertOne() y insertMany().
-
 2. **Recuperar documentos** con find().
-
 3. **Filtrar datos** con Filters (búsquedas avanzadas).
-
 4. **Usar proyecciones** para seleccionar qué campos mostrar.
-
-  
-
-🔹 **MongoDB es flexible**: Si no existe la base de datos o colección, MongoDB la crea al insertar el primer documento.
-
-**📌 ¿Qué sigue?**
-
-• Aprender **actualización de documentos (updateOne y updateMany)**.
-
-• Profundizar en **índices y agregaciones** para optimizar búsquedas.
-
-• Conectar **MongoDB con una API REST en Java**.
-
-  
-
-¡Dime si necesitas más ejemplos! 🚀
