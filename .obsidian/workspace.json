@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
+                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "0. Examen Contenido"
+              "title": "Ejercicio 1 - Test"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 301.5,
-    "collapsed": true
+    "width": 301.5
   },
   "right": {
     "id": "8bdbff94108bdb03",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
+                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 0. Examen Contenido"
+              "title": "Enlaces entrantes de Ejercicio 1 - Test"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
+                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de 0. Examen Contenido"
+              "title": "Enlaces salientes de Ejercicio 1 - Test"
             }
           },
           {
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
+                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 0. Examen Contenido"
+              "title": "Esquema de Ejercicio 1 - Test"
             }
           }
         ],
@@ -157,7 +156,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,6 +171,11 @@
   },
   "active": "9cf5521e8aa26b74",
   "lastOpenFiles": [
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/0. Índice - Jetpack DataStore (Preferences DataStore).md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Guardar y leer un valor booleano.md",
+    "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
     "PMM/4. Examen/Introducción a las Pruebas con @Test y assert.md",
     "PMM/4. Examen/Dependencias.md",
     "PMM/4. Examen/RoadMap Examen/8. Pruebas unitarias para el `DataStore`.md",
@@ -181,7 +186,6 @@
     "[[PMM/4. Examen",
     "[[PMM",
     "PMM/4. Examen/RoadMap Examen/6. Pruebas unitarias para las funciones.md",
-    "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
     "PMM/4. Examen/3. Test.md",
     "PMM/4. Examen/RoadMap Examen/5. Inicialización de un `DataStore`.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/3. Creación de DataStore.md",
@@ -193,13 +197,9 @@
     "PMM/2. Apuntes/A1  - Room/3.1. Definir una Entidad.md",
     "PMM/2. Apuntes/A1  - Room/3.2. Crear el DAO.md",
     "PMM/2. Apuntes/A1  - Room/0. Cómo interactuar con una base de datos con Room.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/0. Índice - Jetpack DataStore (Preferences DataStore).md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/1. Introducción a DataStore.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/6. Explicación línea a línea.md",
     "PMM/2. Apuntes/Conceptos/Flow.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/2. Configuración e instalación.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Guardar y leer un valor booleano.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
     "PMM/4. Examen/RoadMap Examen",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3",

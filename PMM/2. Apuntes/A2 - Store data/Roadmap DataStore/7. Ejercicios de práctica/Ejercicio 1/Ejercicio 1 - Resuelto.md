@@ -51,7 +51,7 @@ suspend fun saveAirplaneMode(isEnabled: Boolean) {
 
 ```kotlin
 val airplaneModeFlow: Flow<Boolean?> = context.dataStore.data.map { preferences ->
-    preferences[AIRPLANE_MODE_KEY]
+    preferences[AIRPLANE_MODE_KEY] ?: false // evita null y pone false
 }
 ```
 
