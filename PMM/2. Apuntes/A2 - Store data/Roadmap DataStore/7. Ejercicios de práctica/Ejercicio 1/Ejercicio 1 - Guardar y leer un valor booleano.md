@@ -9,7 +9,6 @@
 5. **Prueba llamando a la función de guardado y lectura en una `Activity` o `ViewModel`.**
 
 🔹 **Pista:**
-
 - Usa `booleanPreferencesKey("airplane_mode")` para definir la clave.
 - La estructura será **idéntica a `SettingsDataStore`**, pero con otro nombre de clave.
 

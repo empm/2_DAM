@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3537a5e4c5470e7d",
+        "id": "bd2da707c2ed41cc",
         "type": "tabs",
         "children": [
           {
-            "id": "6958d4840bc436e2",
+            "id": "9cf5521e8aa26b74",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/8. Ejemplo práctico completo.md",
+                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "7. Pruebas unitarias para la base de datos usando Room"
             }
           }
         ]
@@ -38,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -54,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
             }
           },
           {
@@ -62,14 +69,16 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 301.5
   },
   "right": {
     "id": "8bdbff94108bdb03",
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/8. Ejemplo práctico completo.md",
+                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de 7. Pruebas unitarias para la base de datos usando Room"
             }
           },
           {
@@ -102,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/8. Ejemplo práctico completo.md",
+                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de 7. Pruebas unitarias para la base de datos usando Room"
             }
           },
           {
@@ -115,8 +128,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
             }
           },
           {
@@ -125,17 +142,21 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/8. Ejemplo práctico completo.md"
-              }
+                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de 7. Pruebas unitarias para la base de datos usando Room"
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -147,44 +168,44 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "6958d4840bc436e2",
+  "active": "9cf5521e8aa26b74",
   "lastOpenFiles": [
-    "PMM/2. Apuntes/A2 - Store data/x. Data store.md",
+    "PMM/4. Examen/RoadMap Examen/8. Pruebas unitarias para el `DataStore`.md",
+    "PMM/4. Examen/RoadMap Examen/6. Pruebas unitarias para las funciones.md",
+    "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+    "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
+    "PMM/4. Examen/3.1 Introducción a las Pruebas con @Test y assert.md",
+    "PMM/4. Examen/1. Dependencias.md",
+    "PMM/4. Examen/3. Test.md",
+    "PMM/4. Examen/RoadMap Examen/5. Inicialización de un `DataStore`.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/3. Creación de DataStore.md",
+    "PMM/4. Examen/RoadMap Examen/4. Implementación de clases con métodos de acceso.md",
+    "PMM/4. Examen/RoadMap Examen/3. Creación de un DAO.md",
+    "3. Creación del DAO.md",
+    "PMM/4. Examen/RoadMap Examen/2. Definición de una entidad.md",
+    "PMM/3. Actividades (codelab)/Tema 4/A2 - Guarda tus preferencias de forma local con DataStore.md",
+    "PMM/2. Apuntes/A1  - Room/3.1. Definir una Entidad.md",
+    "PMM/2. Apuntes/A1  - Room/3.2. Crear el DAO.md",
     "PMM/2. Apuntes/A1  - Room/0. Cómo interactuar con una base de datos con Room.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/0. Índice de Contenidos - Jetpack DataStore (Preferences DataStore).md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/0. Índice - Jetpack DataStore (Preferences DataStore).md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/1. Introducción a DataStore.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/6. Explicación línea a línea.md",
+    "PMM/2. Apuntes/Conceptos/Flow.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/2. Configuración e instalación.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Guardar y leer un valor booleano.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/8. Ejemplo práctico completo.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2/Ejercicio 2 - Guardar y recuperar múltiples preferencias.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3/Ejercicio 3 - Implementar DataStore en ViewModel y observar cambios en la UI.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3/Ejercicio 3 - Resuelto.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2/Ejercicio 2 - Resuelto.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
+    "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
+    "[[PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
+    "[[PMM/4. Examen/RoadMap Examen",
+    "[[PMM/4. Examen",
+    "[[PMM",
+    "PMM/4. Examen/RoadMap Examen",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/5. Manejo de errores y excepciones.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/1. Ejercicio 1 - Enunciado.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/6. Explicación línea a línea.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/3. Creación de DataStore.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/5.2. Manejo de errores con test.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/4. Lectura y escritura de datos.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/2. Configuración e instalación.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/1. Introducción a DataStore.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore",
-    "PMM/3. Actividades (codelab)/Tema 4/A2 - Crea una app de búsqueda de vuelos.md",
-    "PMM/3. Actividades (codelab)/Tema 4/A2 - Guarda tus preferencias de forma local con DataStore.md",
     "PMM/3. Actividades (codelab)/Tema 4",
-    "PMM/2. Apuntes/A1  - Room/2. Configuración inicial.md",
-    "PMM/3. Actividades (codelab)/Tema 3/A1.3 - Práctica, Cómo compilar la app de Bus Schedule.md",
-    "PMM/3. Actividades (codelab)/Tema 3/A1.2 - Cómo leer y actualizar datos con Room.md",
-    "PMM/3. Actividades (codelab)/Tema 3/A1.1 - Cómo lograr la persistencia de los datos con Room.md",
-    "PSP/Examen.md",
-    "PMM/2. Apuntes/A2 - Store data",
-    "PMM/2. Apuntes/A1  - Room",
-    "4.2 Creación de entidades con atributos privados y getters",
-    "AD/2. Apuntes/Tema 6/Roadmap MongoDB/4. Uso de entidades",
     "x/Pasted image 20250124180625.png",
     "x/Pasted image 20250124190907.png",
     "x/Pasted image 20250124190904.png",
