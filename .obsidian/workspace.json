@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+                "file": "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "7. Pruebas unitarias para la base de datos usando Room"
+              "title": "1. Dependencias"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+                "file": "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de 7. Pruebas unitarias para la base de datos usando Room"
+              "title": "Enlaces entrantes de 1. Dependencias"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+                "file": "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de 7. Pruebas unitarias para la base de datos usando Room"
+              "title": "Enlaces salientes de 1. Dependencias"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+                "file": "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de 7. Pruebas unitarias para la base de datos usando Room"
+              "title": "Esquema de 1. Dependencias"
             }
           }
         ],
@@ -170,9 +170,14 @@
   },
   "active": "9cf5521e8aa26b74",
   "lastOpenFiles": [
+    "[[PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
+    "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
+    "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+    "[[PMM/4. Examen/RoadMap Examen",
+    "[[PMM/4. Examen",
+    "[[PMM",
     "PMM/4. Examen/RoadMap Examen/8. Pruebas unitarias para el `DataStore`.md",
     "PMM/4. Examen/RoadMap Examen/6. Pruebas unitarias para las funciones.md",
-    "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
     "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
     "PMM/4. Examen/3.1 Introducción a las Pruebas con @Test y assert.md",
     "PMM/4. Examen/1. Dependencias.md",
@@ -194,11 +199,6 @@
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/2. Configuración e instalación.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Guardar y leer un valor booleano.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
-    "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
-    "[[PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
-    "[[PMM/4. Examen/RoadMap Examen",
-    "[[PMM/4. Examen",
-    "[[PMM",
     "PMM/4. Examen/RoadMap Examen",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3",
