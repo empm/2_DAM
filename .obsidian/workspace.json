@@ -13,12 +13,10 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
+                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
                 "mode": "source",
                 "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Ejercicio 1 - Test"
+              }
             }
           }
         ]
@@ -40,11 +38,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
-              },
-              "icon": "lucide-folder-closed",
-              "title": "Explorador de archivos"
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -59,9 +54,7 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              },
-              "icon": "lucide-search",
-              "title": "Buscar"
+              }
             }
           },
           {
@@ -69,9 +62,7 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Marcadores"
+              "state": {}
             }
           }
         ]
@@ -94,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
+                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,9 +93,7 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Ejercicio 1 - Test"
+              }
             }
           },
           {
@@ -113,12 +102,10 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
+                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Enlaces salientes de Ejercicio 1 - Test"
+              }
             }
           },
           {
@@ -128,12 +115,8 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Etiquetas"
+                "useHierarchy": true
+              }
             }
           },
           {
@@ -142,13 +125,8 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Esquema de Ejercicio 1 - Test"
+                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md"
+              }
             }
           }
         ],
@@ -156,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -171,51 +148,52 @@
   },
   "active": "9cf5521e8aa26b74",
   "lastOpenFiles": [
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
+    "SGE/Examen/Parcial 2 - Módulos Odoo.md",
+    "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
+    "AD/2. Apuntes/Tema 5/RoadMap - API REST con Spring/API REST con Spring.md",
+    "2025-02-15.md",
+    "x/Pasted image 20250215113753.png",
+    "Sin título.canvas",
+    "x/Pasted image 20250215113735.png",
+    "x/Pasted image 20250215113519.png",
+    "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
+    "SGE/Examen",
+    "PMM/4. Examen/RoadMap Examen/6. Pruebas unitarias para las funciones.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/3. Creación de DataStore.md",
+    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
+    "PMM/4. Examen/RoadMap Examen/5. Inicialización de un `DataStore`.md",
+    "PMM/4. Examen/RoadMap Examen/3. Creación de un DAO.md",
+    "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
+    "PMM/4. Examen/RoadMap Examen/4. Implementación de clases con métodos de acceso.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/0. Índice - Jetpack DataStore (Preferences DataStore).md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Guardar y leer un valor booleano.md",
-    "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
     "PMM/4. Examen/Introducción a las Pruebas con @Test y assert.md",
     "PMM/4. Examen/Dependencias.md",
     "PMM/4. Examen/RoadMap Examen/8. Pruebas unitarias para el `DataStore`.md",
     "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
     "[[PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
-    "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
     "[[PMM/4. Examen/RoadMap Examen",
     "[[PMM/4. Examen",
     "[[PMM",
-    "PMM/4. Examen/RoadMap Examen/6. Pruebas unitarias para las funciones.md",
     "PMM/4. Examen/3. Test.md",
-    "PMM/4. Examen/RoadMap Examen/5. Inicialización de un `DataStore`.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/3. Creación de DataStore.md",
-    "PMM/4. Examen/RoadMap Examen/4. Implementación de clases con métodos de acceso.md",
-    "PMM/4. Examen/RoadMap Examen/3. Creación de un DAO.md",
     "3. Creación del DAO.md",
     "PMM/4. Examen/RoadMap Examen/2. Definición de una entidad.md",
     "PMM/3. Actividades (codelab)/Tema 4/A2 - Guarda tus preferencias de forma local con DataStore.md",
     "PMM/2. Apuntes/A1  - Room/3.1. Definir una Entidad.md",
     "PMM/2. Apuntes/A1  - Room/3.2. Crear el DAO.md",
-    "PMM/2. Apuntes/A1  - Room/0. Cómo interactuar con una base de datos con Room.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/1. Introducción a DataStore.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/6. Explicación línea a línea.md",
-    "PMM/2. Apuntes/Conceptos/Flow.md",
     "PMM/4. Examen/RoadMap Examen",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore",
-    "PMM/3. Actividades (codelab)/Tema 4",
     "x/Pasted image 20250124180625.png",
     "x/Pasted image 20250124190907.png",
     "x/Pasted image 20250124190904.png",
     "x/Pasted image 20250124185944.png",
     "x/Pasted image 20250124185700.png",
     "x/Pasted image 20250124185342.png",
-    "x/Pasted image 20250124185245.png",
-    "x/Pasted image 20250124185040.png",
-    "x/Pasted image 20250124184634.png",
-    "x/Pasted image 20250124183956.png"
+    "x/Pasted image 20250124185245.png"
   ]
 }
