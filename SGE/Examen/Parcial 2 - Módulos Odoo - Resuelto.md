@@ -221,7 +221,7 @@ Se nos pide crear una vista de calendario para la clase `bomberocamion`, donde s
 ## **Código XML para la Vista Calendar de `bomberocamion`**
 
 ```xml
-<record model="ir.ui.view" id="view_bomberocamion_calendar">
+<record model="ir.ui.view" id="apellido1.bomberocamion_calendar">
     <field name="name">Calendario de Bomberos en Camiones</field>
     <field name="model">apellido1.bomberocamion</field>
     <field name="arch" type="xml">
