@@ -8,6 +8,8 @@
 
 Esta clase representa la relación **Muchos a Muchos** entre **Bomberos** y **Camiones**, ya que un bombero puede estar asignado a varios camiones en diferentes momentos y un camión puede tener varios bomberos asignados.
 
+> No incluir required o store si no lo pide
+
 ---
 
 ## Código en Python para `bomberocamion`
@@ -19,19 +21,15 @@ class BomberoCamion(models.Model):
     _name = 'apellido1.bomberocamion'
     _description = 'Relación entre Bomberos y Camiones'
 
-    bombero_id = fields.Many2one('apellido1.bombero', string="Bombero", required=True)
-    camion_id = fields.Many2one('apellido1.camion', string="Camión", required=True)
-    fecha_inicio = fields.Datetime('Fecha de Inicio', required=True)
-    fecha_fin = fields.Datetime('Fecha de Fin')
+    bombero_id = fields.Many2one('apellido1.bombero', string="Bombero")
+    camion_id = fields.Many2one('apellido1.camion', string="Camión")
+    fecha_inicio = fields.Date('Fecha de Inicio')
+    fecha_fin = fields.Date('Fecha de Fin')
 
-    puesto = fields.Selection([
-        ('conductor', 'Conductor'),
-        ('copiloto', 'Copiloto'),
-        ('capitan', 'Capitán'),
-        ('bomberoRaso', 'Bombero Raso')
-    ], string="Puesto", default='bomberoRaso', required=True)
+    puesto = fields.Char(related = "bombero_id.puesto")
 
     descripcion = fields.Text('Descripción de la Asignación')
+    nombre_bombero = fields.Char(related='bombero_id.name', string="Nombre del bombero")
 ```
 
 ---
@@ -51,41 +49,37 @@ _description = 'Relación entre Bomberos y Camiones'
 2. **Relaciones con `Bombero` y `Camión`**
 
 ```python
-bombero_id = fields.Many2one('apellido1.bombero', string="Bombero", required=True)
-camion_id = fields.Many2one('apellido1.camion', string="Camión", required=True)
+bombero_id = fields.Many2one('apellido1.bombero', string="Bombero")
+camion_id = fields.Many2one('apellido1.camion', string="Camión")
 ```
 
 -  **`Many2one`** conecta un `bomberocamion` con un **bombero** y un **camión**.
-- **`required=True`** indica que siempre debe haber un bombero y un camión asignado.
 
 3. **Campos de Fechas para el Tiempo de Asignación**
 
 ```python
-fecha_inicio = fields.Datetime('Fecha de Inicio', required=True)
-fecha_fin = fields.Datetime('Fecha de Fin')
+fecha_inicio = fields.Date('Fecha de Inicio')
+fecha_fin = fields.Date('Fecha de Fin')
 ```
 
 - `fecha_inicio`: Registra cuándo el bombero comenzó a estar asignado al camión.
 - `fecha_fin`: Se deja opcional, en caso de que el bombero siga en el camión.
 
-4. **Campo de Selección para el Puesto**
+4. **Cambio de `Selection` a `Related Field` para el Puesto del Bombero**
 
 ```python
-puesto = fields.Selection([
-    ('conductor', 'Conductor'),
-    ('copiloto', 'Copiloto'),
-    ('capitan', 'Capitán'),
-    ('bomberoRaso', 'Bombero Raso')
-], string="Puesto", default='bomberoRaso', required=True)
+puesto_bombero = fields.Char(related="bombero_id.puesto", string="Puesto")
 ```
-- Se define un **campo de selección** con cuatro opciones.
-- El puesto predeterminado es **"Bombero Raso"**.
+
+- En lugar de definir un campo `Selection` estático en `bomberocamion`, podemos **heredar el puesto del bombero vinculado (`bombero_id.puesto`)** usando un campo `related`.
+- Ahora `puesto_bombero` obtiene automáticamente el valor de `bombero_id.puesto`.
 
 5. **Descripción de la Asignación**
 
 ```python
 descripcion = fields.Text('Descripción de la Asignación')
 ```
+
 - Campo de texto libre donde se puede anotar información adicional.
 
 
@@ -112,18 +106,18 @@ class Bombero(models.Model):
     _description = 'Bombero'
     _order = 'apellido1'
 
-    name = fields.Char('Nombre', required=True)
-    apellido1 = fields.Char('Primer Apellido', required=True)
+    name = fields.Char('Nombre')
+    apellido1 = fields.Char('Primer Apellido')
     apellido2 = fields.Char('Segundo Apellido')
-    dni = fields.Char('DNI', required=True, unique=True)
-    fecha_nacimiento = fields.Date('Fecha de Nacimiento', required=True)
+    dni = fields.Char('DNI')
+    fecha_nacimiento = fields.Date('Fecha de Nacimiento')
 
     puesto = fields.Selection([
         ('conductor', 'Conductor'),
         ('copiloto', 'Copiloto'),
         ('capitan', 'Capitán'),
         ('bomberoRaso', 'Bombero Raso')
-    ], string="Puesto", default='bomberoRaso', required=True)
+    ], string="Puesto", default='bomberoRaso')
 
     bomberocamion_ids = fields.One2many('apellido1.bomberocamion', 'bombero_id', string="Historial de Camiones")
 
@@ -149,8 +143,8 @@ _order = 'apellido1'
 2. **Campos Básicos**
 
 ```python
-name = fields.Char('Nombre', required=True)
-apellido1 = fields.Char('Primer Apellido', required=True)
+name = fields.Char('Nombre')
+apellido1 = fields.Char('Primer Apellido')
 apellido2 = fields.Char('Segundo Apellido')
 ```
 
@@ -161,10 +155,9 @@ apellido2 = fields.Char('Segundo Apellido')
 3. **Campo `dni` (Único y Obligatorio)**
 
 ```python
-dni = fields.Char('DNI', required=True, unique=True)
+dni = fields.Char('DNI')
 ```
 
-- `required=True`: No se puede crear un bombero sin DNI.
 - **⚠️ Odoo no admite `unique=True` en `fields.Char`.** En su lugar, se debe usar **`_sql_constraints`**, que impone la restricción directamente en la base de datos.
 
 4. **Fecha de Nacimiento**
@@ -183,7 +176,7 @@ puesto = fields.Selection([
     ('copiloto', 'Copiloto'),
     ('capitan', 'Capitán'),
     ('bomberoRaso', 'Bombero Raso')
-], string="Puesto", default='bomberoRaso', required=True)
+], string="Puesto", default='bomberoRaso')
 ```
 
 - Opciones predefinidas para el puesto del bombero.
@@ -281,99 +274,77 @@ En la vista **calendar de `bomberocamion`**, en lugar de mostrar los IDs de `bom
 
 ---
 
-## **Solución: Agregar un campo calculado en el modelo `bomberocamion`**
+## **Solución: crear una función`**
 
-Para mostrar el nombre del bombero y del camión en la vista, Odoo necesita un campo **calculado** (`compute=True`) que los concatene.
+Para lograr esto, ahora hemos implementado la función **`name_get`**, que define cómo se mostrará el nombre del registro en Odoo.
 
 ```python
 from odoo import models, fields, api
 
 class BomberoCamion(models.Model):
-    _name = 'apellido1.bomberocamion'
-    _description = 'Relación entre Bomberos y Camiones'
+	...
 
-    bombero_id = fields.Many2one('apellido1.bombero', string="Bombero", required=True)
-    camion_id = fields.Many2one('apellido1.camion', string="Camión", required=True)
-    fecha_inicio = fields.Datetime('Fecha de Inicio', required=True)
-    fecha_fin = fields.Datetime('Fecha de Fin')
-
-    puesto = fields.Selection([
-        ('conductor', 'Conductor'),
-        ('copiloto', 'Copiloto'),
-        ('capitan', 'Capitán'),
-        ('bomberoRaso', 'Bombero Raso')
-    ], string="Puesto", default='bomberoRaso', required=True)
-
-    descripcion = fields.Text('Descripción de la Asignación')
-
-    nombre_evento = fields.Char(string="Evento", compute="_compute_nombre_evento", store=True)
-
-    @api.depends('bombero_id', 'camion_id')
-    def _compute_nombre_evento(self):
-        for record in self:
-            if record.bombero_id and record.camion_id:
-                record.nombre_evento = f"{record.bombero_id.name} - {record.camion_id.name}"
-            else:
-                record.nombre_evento = "Asignación sin datos"
+def name_get(self):
+    result = []
+    for record in self:
+        name = f" {record.bombero_id.name} - {record.camión_id.name}"
+		result.append((record.id, name))
+    return result
 ```
-
----
 
 ### **Explicación del Código**
 
-1. **Campo Calculado `nombre_evento`**
+1. **Definición de `name_get`**
 
-    ```python
-    nombre_evento = fields.Char(string="Evento", compute="_compute_nombre_evento", store=True)
-    ```
-
-- Este campo almacenará la concatenación del **nombre del bombero** y el **nombre del camión**.
-- `compute="_compute_nombre_evento"` significa que se calcula dinámicamente.
-
-2. **Función `_compute_nombre_evento`**
-
-    ```python
-    @api.depends('bombero_id', 'camion_id')
-    def _compute_nombre_evento(self):
-        for record in self:
-            if record.bombero_id and record.camion_id:
-                record.nombre_evento = f"{record.bombero_id.name} - {record.camion_id.name}"
-            else:
-                record.nombre_evento = "Asignación sin datos"
-    ```
-
-- Si hay **bombero y camión**, se concatena `"Bombero - Camión"`.
-- Si falta información, se muestra `"Asignación sin datos"`.
-
----
-
-### **Modificar la Vista Calendar**
-
-Ahora, en la vista calendar, en vez de mostrar `bombero_id` y `camion_id` por separado, **se usará `nombre_evento`**:
-
-```xml
-<record model="ir.ui.view" id="view_bomberocamion_calendar">
-    <field name="name">Calendario de Bomberos en Camiones</field>
-    <field name="model">apellido1.bomberocamion</field>
-    <field name="arch" type="xml">
-        <calendar string="Asignaciones de Bomberos"
-                  date_start="fecha_inicio"
-                  date_stop="fecha_fin"
-                  color="puesto">
-            <field name="nombre_evento"/>
-            <field name="puesto"/>
-        </calendar>
-    </field>
-</record>
+```python
+def name_get(self):
 ```
 
+- Esta función **personaliza cómo se muestra un registro en Odoo**, especialmente en listas y vistas de selección.
+
+2. **Recorremos los registros en `self`**
+
+```python
+result = []
+for record in self:
+```
+
+- Odoo puede llamar esta función con **varios registros**, por lo que usamos un `for` para recorrerlos.
+
+3. **Concatenamos el nombre del Bombero y el Camión**
+
+```python
+name = f"{record.bombero_id.name} - {record.camion_id.name}"
+```
+
+- Se crea un **nombre legible** combinando el nombre del **bombero** y el **camión**.
+
+4. **Guardamos la información en `result`**
+
+```python
+result.append((record.id, name))
+```
+
+- Odoo **requiere que `name_get` devuelva una lista de tuplas** en el formato: `(ID del registro, Nombre a mostrar)`.
+- Esto permite que en las vistas y selecciones en Odoo, en lugar de ver `"BomberoCamion(3)"`, se vea:  **"Juan Pérez - Camión Alfa"**.
+
+5. **Retornamos `result`**
+
+```python
+return result
+```
+
+- Odoo usará estos nombres en vistas tipo `tree`, `form`, `calendar`, etc.
+
 ---
 
-### **Resultado Final**
+### **¿Qué Cambia con `name_get`?**
 
-✅ Ahora la vista calendar mostrará el evento con el formato: `"Nombre del Bombero - Nombre del Camión"  `
-✅ El evento se actualizará automáticamente si el bombero o el camión cambian.  
-✅ No se muestran IDs, sino nombres entendibles por los usuarios.
+✅ **Antes**, en la vista Calendar se mostraban los IDs del bombero y camión.  
+✅ **Ahora**, se muestra `"Nombre del Bombero - Nombre del Camión"` en todas las vistas donde se usa este modelo.  
+✅ **Se evita la necesidad de un campo adicional**, ya que la función `name_get` personaliza cómo se visualizan los registros en Odoo.
+📌 **Con esta modificación, cuando un usuario seleccione un registro de `bomberocamion`, verá algo comprensible en vez de un número de ID.** 🚀
+✔ **La vista `calendar` ya no necesita un campo adicional para mostrar el nombre completo, porque `name_get` se encarga de ello.**
 
 
 # 5) Vista de formulario de clase bombero, de tal forma que se añadan cuantos más elementos de xml mejor (por ejemplo: notebook, y separator, att...)
@@ -386,36 +357,6 @@ Ahora, en la vista calendar, en vez de mostrar `bombero_id` y `camion_id` por se
     - **`notebook`** para organizar secciones.
     - **`separator`** para separar visualmente los campos.
     - **`attrs`** para hacer condicional la visibilidad del campo "Número de Carnet".
-
----
-
-## **Modificar el Modelo `Bombero` para Incluir los Campos Necesarios**
-
-```python
-from odoo import models, fields
-
-class Bombero(models.Model):
-    _name = 'apellido1.bombero'
-    _description = 'Bombero'
-
-    name = fields.Char('Nombre', required=True)
-    apellido1 = fields.Char('Primer Apellido', required=True)
-    apellido2 = fields.Char('Segundo Apellido')
-    dni = fields.Char('DNI', required=True, index=True)
-    fecha_nacimiento = fields.Date('Fecha de Nacimiento', required=True)
-
-    puesto = fields.Selection([
-        ('conductor', 'Conductor'),
-        ('copiloto', 'Copiloto'),
-        ('capitan', 'Capitán'),
-        ('bomberoRaso', 'Bombero Raso')
-    ], string="Puesto", default='bomberoRaso', required=True)
-
-    carnet_camion = fields.Boolean('¿Tiene Carnet de Camión?')
-    numero_carnet = fields.Char('Número de Carnet')
-
-    bomberocamion_ids = fields.One2many('apellido1.bomberocamion', 'bombero_id', string="Historial de Camiones")
-```
 
 ---
 
@@ -543,19 +484,19 @@ class Bombero(models.Model):
     _name = 'apellido1.bombero'
     _description = 'Bombero'
 
-    name = fields.Char('Nombre', required=True)
-    apellido1 = fields.Char('Primer Apellido', required=True)
+    name = fields.Char('Nombre')
+    apellido1 = fields.Char('Primer Apellido')
     apellido2 = fields.Char('Segundo Apellido')
-    dni = fields.Char('DNI', required=True, index=True)
-    fecha_nacimiento = fields.Date('Fecha de Nacimiento', required=True)
+    dni = fields.Char('DNI')
+    fecha_nacimiento = fields.Date('Fecha de Nacimiento')
 
-    edad = fields.Integer('Edad', compute="_compute_edad", store=True)
+    edad = fields.Integer('Edad', compute="_compute_edad")
 
     @api.depends('fecha_nacimiento')
     def _compute_edad(self):
         today = date.today()
         for record in self:
-            record.edad = relativedelta(today, record.fecha_nacimiento).years if record.fecha_nacimiento else 0
+            record.edad = relativedelta(today, record.fecha_nacimiento).years 
 ```
 
 ---
@@ -565,11 +506,10 @@ class Bombero(models.Model):
 1. **Campo `edad` con `compute=True`**
 
     ```python
-    edad = fields.Integer('Edad', compute="_compute_edad", store=True)
+    edad = fields.Integer('Edad', compute="_compute_edad")
     ```
 
 - **Es un campo calculado** (`compute="_compute_edad"`), lo que significa que no se almacena directamente, sino que se **recalcula automáticamente**.
-- `store=True` permite que el valor se almacene en la base de datos y pueda usarse en búsquedas.
 
 2. **Decorador `@api.depends('fecha_nacimiento')`**
 
@@ -586,32 +526,29 @@ class Bombero(models.Model):
     ```python
     today = date.today()
     for record in self:
-        record.edad = relativedelta(today, record.fecha_nacimiento).years if record.fecha_nacimiento else 0
+        record.edad = relativedelta(today, record.fecha_nacimiento).years 
     ```
 
 - Se obtiene la **fecha actual (`date.today()`)**.
 - Se usa `relativedelta` para calcular directamente los **años de diferencia** sin hacer comparaciones manuales de mes y día.
-- **Si `fecha_nacimiento` no está definida, se asigna `0`** para evitar errores.
 
 ---
 
 ## **Modificar la Vista de Formulario para Mostrar la Edad**
 
-En el XML de la vista de `Bombero`, agregamos la edad como un campo de solo lectura:
+En el XML de la vista de `Bombero`, agregamos la edad como un campo
 
 ```xml
 <field name="fecha_nacimiento"/>
-<field name="edad" readonly="1"/>
+<field name="edad"/>
 ```
 
-- `readonly="1"` hace que la edad **no sea editable** por el usuario, ya que se calcula automáticamente.
-
+- `readonly="1"` NO hace falta poner readonly, puesto que la función viene predefinido
 ---
 ### **Resultado Final**
 
 ✅ La edad se calcula automáticamente según la fecha de nacimiento.  
 ✅ Si se cambia la fecha, la edad se actualiza instantáneamente en el formulario.  
-✅ El campo `edad` es solo de lectura (`readonly`) para evitar modificaciones manuales.
 
 
 # 7) Mediante herencia de clase, crear la siguiente estructura. 
@@ -625,36 +562,7 @@ En el XML de la vista de `Bombero`, agregamos la edad como un campo de solo lect
 
 ---
 
-## **1. Implementación de la Clase `Parque` en el Módulo Heredado (`apellido1_2`)**
-
-```python
-from odoo import models, fields
-
-class Parque(models.Model):
-    _name = 'apellido1_2.parque'
-    _description = 'Parque de Bomberos'
-
-    name = fields.Char('Nombre del Parque', required=True)
-    ubicacion = fields.Char('Ubicación', required=True)
-    capacidad = fields.Integer('Capacidad Máxima')
-    jefe_id = fields.Many2one('apellido1.bombero', string="Jefe de Parque")
-    bomberos_ids = fields.One2many('apellido1.bombero', 'parque_id', string="Bomberos Asignados")
-    camiones_ids = fields.One2many('apellido1.camion', 'parque_id', string="Camiones Asignados")
-```
-
-### **2. Explicación del Código**
-
-- `_name = 'apellido1_2.parque'` → Define que el modelo pertenece al nuevo módulo heredado.
-- `name` → Nombre del parque de bomberos.
-- `ubicacion` → Ubicación del parque.
-- `capacidad` → Número máximo de bomberos que puede alojar.
-- `jefe_id` → Relación `Many2one` con `Bombero` (jefe del parque).
-- `bomberos_ids` → Relación `One2many` con `Bombero` para listar los bomberos asignados.
-- `camiones_ids` → Relación `One2many` con `Camión` para listar los camiones en el parque.
-
----
-
-## **3. Vista `Form` para la Clase `Parque`**
+## **1. Vista `Form` para la Clase `Parque`**
 
 ```xml
 <record model="ir.ui.view" id="view_parque_form">
@@ -683,7 +591,7 @@ class Parque(models.Model):
 </record>
 ```
 
-### **4. Explicación de la Vista `Form`**
+### **2. Explicación de la Vista `Form`**
 
 - Se agrupan los campos básicos del parque (`name`, `ubicacion`, `capacidad`, `jefe_id`).
 - **Se usa un `notebook`** para organizar los bomberos y camiones en pestañas separadas.
@@ -691,7 +599,7 @@ class Parque(models.Model):
 
 ---
 
-## **5. `Action` para la Clase `Parque`**
+## **3. `Action` para la Clase `Parque`**
 
 ```xml
 <record model="ir.actions.act_window" id="action_parque">
@@ -707,7 +615,7 @@ class Parque(models.Model):
 
 ---
 
-## **6. `Menuitem` para Acceder a `Parque`**
+## **4. `Menuitem` para Acceder a `Parque`**
 
 ```xml
 <menuitem name="Gestión de Parques" id="menu_parques_root" parent="modulo1.modulo1_menu_root"/>
@@ -737,3 +645,41 @@ En este ejercicio, hemos aplicado **herencia en Odoo** al crear un nuevo módulo
 ✅ Formulario con `notebook` para organizar datos.  
 ✅ Menús y acciones para acceder al módulo desde la interfaz.  
 ✅ Uso de herencia sin modificar los modelos base (`Bombero`, `Camión`).
+
+
+# Corrección Chen
+
+[17/2/25, 20:41:43] (ᗜ ˰ ᗜ) XinXing Chen: Vale... Vamos a ir por pasos👀. Para empezar te recomiendo no añadir required o store cuando no te lo piden asi ahorras tiempo. 
+
+- [x] Ejercicio1: La clase bomberocamion tiene 6 campos y se necesita 7, los fechas son Date no datetime( eso es para fecha y hora), el campo puesto esta en la clase de bomberos y lo tienes repetido, yo lo que hice fue poner un campo `fields.Char(related = bombero_id.puesto)`
+- [x] Ejercicio 2: En el DNI no pongas unique = True si tienes el constraint puesto
+- [x] Ejercicio 4: Esta mal, no te pide eso y no es necesario modificar la vista calendar. Te pide que hagas la función name_get
+
+```python
+def name_get(self):
+    result = []
+    for record in self:
+        name = f" {record.bombero_id.name} - {record.camión_id.name}"
+		result.append((record.id, name))
+    return result
+```
+
+- [ ] Ejercicio 5: Si solo te pide hacer el formulario, haz solo eso y no toques nada, no era necesario modificar el model bombero, luego un separator no tiene sentido tener un título puesto que es una línea invisible y creo que en su lugar debiste poner colspan o rowspan
+- [x] Ejercicio 6: No pongas readonly en el campo edad porque el compute viene con eso por defecto
+- [ ] Ejercicio 7: Sólo te pide que hagas la vista formulario, osea que no tenias que hacerle la clase Parque, y como es una herencia no tiene ni accion ni menuitem porque eso esta en la vista padre
+[17/2/25, 20:54:26] (ᗜ ˰ ᗜ) XinXing Chen: te pongo un ejemplo del ejercicio 7
+```xml
+<record model="ir.ui.view" id="view_parque_form">
+    <field name="name">Formulario de Parque</field>
+    <field name="model">apellido1.parque</field>
+    <field name="inherit_id" ref="apellido1.view_parque_form">
+    <field name="arch" type="xml">
+            <field name="nombre" position="after">
+               <field name="otraClase_id">
+            </field>
+    </field>
+</record>
+```
+
+esto es todo lo que tienes que hacer y explicarlo
+Total, en general lo tienes bastante bien y apruebas sin problemas asi que enhorabuena👀
