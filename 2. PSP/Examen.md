@@ -1,0 +1,5 @@
+- [ ] Ejercicios de entrega
+- [ ] pedirle a Jaime examen
+- [ ] todo
+- [ ] tener ejemplos ya que repite lo mismo 
+- [ ] c: estructura y anidar if else, le importa que sepamos la estructura

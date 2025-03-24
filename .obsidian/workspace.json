@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "bd2da707c2ed41cc",
+        "id": "01b830456fc4d388",
         "type": "tabs",
         "children": [
           {
-            "id": "9cf5521e8aa26b74",
+            "id": "9d16749883c3a273",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
+                "file": "1. DI/0. Desarrollo de interfaces.md",
                 "mode": "source",
                 "source": false
-              }
+              },
+              "icon": "lucide-file",
+              "title": "0. Desarrollo de interfaces"
             }
           }
         ]
@@ -38,8 +40,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
             }
           },
           {
@@ -54,7 +59,9 @@
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
             }
           },
           {
@@ -62,7 +69,9 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
             }
           }
         ]
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
+                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -93,7 +102,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de Ejercicio 1 - Test"
             }
           },
           {
@@ -102,10 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
+                "file": "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de Ejercicio 1 - Test"
             }
           },
           {
@@ -115,8 +128,12 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
-              }
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
             }
           },
           {
@@ -125,8 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md"
-              }
+                "file": "1. DI/0. Desarrollo de interfaces.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de 0. Desarrollo de interfaces"
             }
           }
         ],
@@ -146,54 +168,52 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9cf5521e8aa26b74",
+  "active": "9d16749883c3a273",
   "lastOpenFiles": [
+    "1. DI/1. Examen.md",
+    "x/Pasted image 20250322092734.png",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/00. Esquema.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/0. Resumen.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron",
+    "1. DI/Evaluación 1/Unidad 02 - Node/00. Esquema.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/0. Resumen.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node",
+    "1. DI/Evaluación 1/Unidad 02 - Node.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/00. Esquema.md",
+    "1. DI/Sin título.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/1. Sintaxis básica.md",
+    "1. DI/0. Desarrollo de interfaces.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/2. Callbacks, promesas y objetos.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/3. Promesas.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/2. Callbacks.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/1. Funciones.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/5. Método reduce, Spread y Rest.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/4. Async-await.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/3. Arrays.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/4. Clases.md",
+    "2. PSP/Examen.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript",
+    "2. PSP/Evaluación 1",
+    "1. DI/Evaluación 2",
+    "2. PSP/Evaluación 2",
+    "1. DI/Evaluación 1",
+    "1. DI",
+    "2. PSP",
     "SGE/Examen/Parcial 2 - Módulos Odoo.md",
     "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
-    "AD/2. Apuntes/Tema 5/RoadMap - API REST con Spring/API REST con Spring.md",
-    "2025-02-15.md",
-    "x/Pasted image 20250215113753.png",
-    "Sin título.canvas",
-    "x/Pasted image 20250215113735.png",
-    "x/Pasted image 20250215113519.png",
-    "PMM/4. Examen/RoadMap Examen/7. Pruebas unitarias para la base de datos usando Room.md",
     "SGE/Examen",
+    "x/Pasted image 20250215113519.png",
+    "x/Pasted image 20250215113735.png",
+    "x/Pasted image 20250215113753.png",
     "PMM/4. Examen/RoadMap Examen/6. Pruebas unitarias para las funciones.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Test.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/3. Creación de DataStore.md",
     "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Resuelto.md",
-    "PMM/4. Examen/RoadMap Examen/5. Inicialización de un `DataStore`.md",
-    "PMM/4. Examen/RoadMap Examen/3. Creación de un DAO.md",
-    "PMM/4. Examen/RoadMap Examen/0. Examen Contenido.md",
-    "PMM/4. Examen/RoadMap Examen/4. Implementación de clases con métodos de acceso.md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/0. Índice - Jetpack DataStore (Preferences DataStore).md",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1/Ejercicio 1 - Guardar y leer un valor booleano.md",
-    "PMM/4. Examen/Introducción a las Pruebas con @Test y assert.md",
-    "PMM/4. Examen/Dependencias.md",
-    "PMM/4. Examen/RoadMap Examen/8. Pruebas unitarias para el `DataStore`.md",
-    "PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
-    "[[PMM/4. Examen/RoadMap Examen/1. Dependencias.md",
-    "[[PMM/4. Examen/RoadMap Examen",
-    "[[PMM/4. Examen",
-    "[[PMM",
-    "PMM/4. Examen/3. Test.md",
-    "3. Creación del DAO.md",
-    "PMM/4. Examen/RoadMap Examen/2. Definición de una entidad.md",
-    "PMM/3. Actividades (codelab)/Tema 4/A2 - Guarda tus preferencias de forma local con DataStore.md",
-    "PMM/2. Apuntes/A1  - Room/3.1. Definir una Entidad.md",
-    "PMM/2. Apuntes/A1  - Room/3.2. Crear el DAO.md",
-    "PMM/4. Examen/RoadMap Examen",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 2",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 3",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica/Ejercicio 1",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore/7. Ejercicios de práctica",
-    "PMM/2. Apuntes/A2 - Store data/Roadmap DataStore",
     "x/Pasted image 20250124180625.png",
     "x/Pasted image 20250124190907.png",
     "x/Pasted image 20250124190904.png",
     "x/Pasted image 20250124185944.png",
     "x/Pasted image 20250124185700.png",
-    "x/Pasted image 20250124185342.png",
-    "x/Pasted image 20250124185245.png"
+    "x/Pasted image 20250124185342.png"
   ]
 }

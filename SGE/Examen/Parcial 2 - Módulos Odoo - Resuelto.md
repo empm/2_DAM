@@ -121,6 +121,11 @@ class Bombero(models.Model):
 
     bomberocamion_ids = fields.One2many('apellido1.bomberocamion', 'bombero_id', string="Historial de Camiones")
 
+	tiene_carnet = fields.Boolean('Tiene carnet de camion')
+	puntos_carnet = fields.Integer('Puntos de carnet')
+
+
+
     _sql_constraints = [('dni_unique', 'UNIQUE(dni)', 'El DNI debe ser único.')]
 ```
 
@@ -274,7 +279,7 @@ En la vista **calendar de `bomberocamion`**, en lugar de mostrar los IDs de `bom
 
 ---
 
-## **Solución: crear una función`**
+## **Solución: crear una función**
 
 Para lograr esto, ahora hemos implementado la función **`name_get`**, que define cómo se mostrará el nombre del registro en Odoo.
 
@@ -346,6 +351,24 @@ return result
 📌 **Con esta modificación, cuando un usuario seleccione un registro de `bomberocamion`, verá algo comprensible en vez de un número de ID.** 🚀
 ✔ **La vista `calendar` ya no necesita un campo adicional para mostrar el nombre completo, porque `name_get` se encarga de ello.**
 
+
+## **Modificar la vista form**
+
+```xml
+<record model="ir.ui.view" id="apellido1.bomberocamion_calendar">
+    <field name="name">Calendario de Bomberos en Camiones</field>
+    <field name="model">apellido1.bomberocamion</field>
+    <field name="arch" type="xml">
+        <calendar string="Asignaciones de Bomberos"
+                  date_start="fecha_inicio"
+                  date_stop="fecha_fin"
+                  color="puesto">
+            <field name="name"/>
+            <field name="puesto"/>
+        </calendar>
+    </field>
+</record>
+```
 
 # 5) Vista de formulario de clase bombero, de tal forma que se añadan cuantos más elementos de xml mejor (por ejemplo: notebook, y separator, att...)
 
