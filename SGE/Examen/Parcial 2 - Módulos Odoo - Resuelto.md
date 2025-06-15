@@ -30,6 +30,7 @@ class BomberoCamion(models.Model):
 
     descripcion = fields.Text('Descripción de la Asignación')
     nombre_bombero = fields.Char(related='bombero_id.name', string="Nombre del bombero")
+    turnos = fields.Selection([('morning','Mañanas'), ('afternoon','Tardes'), ('evening', 'Noches')])
 ```
 
 ---

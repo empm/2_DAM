@@ -21,15 +21,15 @@
 
 ## 📅 Semana 1: Dominar la base técnica
 
-|Día|Objetivo|Actividades|
-|:--|:--|:--|
-|1|**Repasar multihilos en Java**|Crear y lanzar hilos (`Thread`), `run()` y `start()`.|
-|2|**Sincronización en objetos**|Aprender a usar `synchronized`, `wait()`, `notifyAll()`.|
-|3|**Practicar robots sobre cinta**|Resolver caso RobotA/RobotB que trabajan sobre una cinta (`Cinta`, `RobotA`, `RobotB`).|
-|4|**Resolver problema de filósofos**|Programar filósofos con `palillos[]`, `synchronized`, control de recursos.|
-|5|**Sockets TCP - Cliente/Servidor básico**|Enviar texto desde cliente a servidor usando `Socket` y `ServerSocket`.|
-|6|**Sockets TCP - Servidor multicliente**|Crear servidor que maneje múltiples clientes con hilos (`Thread` por cliente).|
-|7|**Ordenar cadenas en Java**|Practicar `Collections.sort()` en listas de `String`.|
+| Día | Objetivo                                  | Actividades                                                                             |
+| :-- | :---------------------------------------- | :-------------------------------------------------------------------------------------- |
+| 1   | **Repasar multihilos en Java**            | Crear y lanzar hilos (`Thread`), `run()` y `start()`.                                   |
+| 2   | **Sincronización en objetos**             | Aprender a usar `synchronized`, `wait()`, `notifyAll()`.                                |
+| 3   | **Practicar robots sobre cinta**          | Resolver caso RobotA/RobotB que trabajan sobre una cinta (`Cinta`, `RobotA`, `RobotB`). |
+| 4   | **Resolver problema de filósofos**        | Programar filósofos con `palillos[]`, `synchronized`, control de recursos.              |
+| 5   | **Sockets TCP - Cliente/Servidor básico** | Enviar texto desde cliente a servidor usando `Socket` y `ServerSocket`.                 |
+| 6   | **Sockets TCP - Servidor multicliente**   | Crear servidor que maneje múltiples clientes con hilos (`Thread` por cliente).          |
+| 7   | **Ordenar cadenas en Java**               | Practicar `Collections.sort()` en listas de `String`.                                   |
 
 ---
 

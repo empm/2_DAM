@@ -5,17 +5,39 @@
 ## 1. Conceptos básicos de procesos y hilos (Semana 2)
 
 - **Proceso**: Programa en ejecución con su propio espacio de memoria.
-    
 - **Hilo**: Unidad ligera dentro de un proceso. Comparte memoria.
 
 ### Hilos en Java
 
 - `Thread` o `Runnable` para crear hilos.
-    
 - Métodos importantes:
-    
     - `start()`, `isAlive()`, `join()`, `sleep()`, `getState()`, `interrupt()`, `currentThread()`.
 
+**Start:**
+- Hace que el hijo empiece la ejecución
+
+**Is Alive:**
+- Comprueba si el hijo está vivo. Devuelve True si lo está.
+
+**Join:**
+- Espera a que acabe el hijo.
+
+**Get State:**
+- Devuelve el estado del hijo:
+	- NEW
+	- RUNNABLE
+	- BLOCKED
+	- WAITIND
+	- TIMED_WAITING
+	- TERMINATED
+
+- **getName()** → Retorna nom del fil
+
+- **setName(String name)** → Canvia el nom a name.
+
+- **getPriority()** → Retorna prioritat del fil
+
+- **setPriority(int p)** → Canvia la prioritat a p
 ### Actividad
 
 - Programa **TIC-TAC** usando 2 hilos que imprimen "TIC" y "TAC" alternativamente.
@@ -25,7 +47,6 @@
 ## 2. Sincronización con `synchronized` (Semana 4)
 
 - **Problema**: Acceso concurrente a recursos compartidos.
-    
 - **Solución**: Usar bloques o métodos `synchronized`.
 
 ### synchronized

@@ -4,71 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "bd2da707c2ed41cc",
+        "id": "b52bde1f300b108c",
         "type": "tabs",
         "children": [
           {
-            "id": "fcbed0e84da6fac0",
+            "id": "585d9718c0bab894",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. PSP/1. Apuntes/Tema 4/00 - Generación de servicios en red.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d9e97ea5d1e0cc7c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. PSP/1. Apuntes/Tema 4/01 - Transferencia de objetos a través de sockets.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a3849f3ff58cc643",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. PSP/1. Apuntes/Tema 4/02 - Servidor multihilo.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9aecc9cf59e0b0c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. PSP/3. Examen/Examen - Roadmap ejercicios.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e9d5fd5c252cdb04",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "2. PSP/1. Apuntes/Tema 5/01 - Técnicas de programación segura.md",
+                "file": "SGE/Examen/Test.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -97,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "put",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 290.5
+    "width": 374.5,
+    "collapsed": true
   },
   "right": {
     "id": "8bdbff94108bdb03",
@@ -134,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "2. PSP/3. Examen/Examen - Roadmap ejercicios.md",
+                "file": "SGE/Examen/Test.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "2. PSP/3. Examen/Examen - Roadmap ejercicios.md",
+                "file": "SGE/Examen/Test.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "2. PSP/3. Examen/Examen - Roadmap ejercicios.md"
+                "file": "SGE/Examen/Test.md"
               }
             }
           }
@@ -183,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,50 +150,51 @@
   },
   "active": "dbd8aec4e6509d40",
   "lastOpenFiles": [
-    "2. PSP/3. Examen/Examen - Plan de estudio.md",
+    "SGE/Examen/Know Test.md",
+    "SGE/Examen/Test.md",
+    "SGE/Examen/banco_preguntas_odoo_13.md",
+    "AD/2. Apuntes/Tema 5/1. API REST con Spring.md",
+    "1. DI/1. Examen.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/07 - Promesas.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/05 - Callbacks.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/03 - Ficheros en Node.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/04 - Electron remote.md",
+    "1. DI/Evaluación 2/1. Iniciar un proyecto node y servidor express -  borrador.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/00 - Iniciar proyecto.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/05 - Ficheros JSON.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/04 - Servidores en Node.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/02 - Eventos en Node.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/01 - Módulos.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/00. Esquema.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/0. Resumen.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/02. Ejercicios/05 - Ejercicios con ficheros JSON.md",
+    "SGE/Examen/Parcial 2 - Módulos Odoo.md",
+    "SGE/Examen/Bomberocamion.png",
+    "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
+    "1. DI/0. Desarrollo de interfaces.md",
+    "x/Captura de pantalla 2025-01-02 a las 20.22.37.png",
+    "SGE/1. Apuntes/1. Desarrollar Módulos/1. Instalar entorno Odoo.md",
+    "SGE/1. Apuntes/0. Explicación/1. Explicación modelo.md",
+    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/Estructura de un nuevo módulo.md",
+    "SGE/1. Apuntes/2. Inicio - El modelo/1. Campos básicos.md",
+    "SGE/1. Apuntes/4. El controlador/3.1.0 Código fuente/3.2.1 Código fuente.md",
+    "x/Pasted image 20250422064325.png",
+    "x/Pasted image 20250417073110.png",
     "2. PSP/3. Examen",
-    "2. PSP/3. Examen/Examen - Roadmap ejercicios.md",
-    "2. PSP/2. Ejercicios/Tema 5/00 - Roadmap y plan de estudio.md",
-    "2. PSP/1. Apuntes/Tema 5/00 -Técnicas de programación seguras**.md",
     "2. PSP/2. Ejercicios/Tema 5",
-    "2. PSP/1. Apuntes/Tema 5/02 - Generar y verificar firma digital.md",
-    "2. PSP/1. Apuntes/Tema 5/01 - Técnicas de programación segura.md",
-    "2. PSP/1. Apuntes/Tema 3/00 - Programación de comunicaciones en red.md",
-    "2. PSP/2. Ejercicios/Tema 4/00 - Roadmap y plan de estudio.md",
     "2. PSP/1. Apuntes/Tema 5",
-    "2. PSP/1. Apuntes/Tema 4/02 - Servidor multihilo.md",
-    "2. PSP/1. Apuntes/Tema 4/00 - Generación de servicios en red.md",
     "2. PSP/2. Ejercicios/Tema 4",
-    "2. PSP/1. Apuntes/Tema 4/03 - Cliente-Servidor TCP-UDP.md",
-    "2. PSP/1. Apuntes/Tema 4/01 - Transferencia de objetos a través de sockets.md",
-    "2. PSP/2. Ejercicios/Tema 3/00 - Roadmap y plan de estudio.md",
     "2. PSP/1. Apuntes/Tema 4",
-    "2. PSP/2. Ejercicios/Tema 2/00 - Roadmap y plan de estudio.md",
-    "2. PSP/2. Ejercicios/Tema 1/02 - Creación y duplicación de procesos.md",
     "2. PSP/2. Ejercicios/Tema 1",
-    "2. PSP/Evaluación 1/2. Ejercicios/Sin título.md",
     "2. PSP/2. Ejercicios/Tema 3",
     "2. PSP/2. Ejercicios/Tema 2",
-    "2. PSP/1. Apuntes/Tema 3/03 - Ejercicios integradores.md",
-    "2. PSP/1. Apuntes/Tema 3/02 - Programación en red UDP.md",
-    "2. PSP/1. Apuntes/Tema 3/01 - Programación en red TCP.md",
     "2. PSP/1. Apuntes/Tema 3",
-    "2. PSP/1. Apuntes/Tema 2/00 - Programación Multihilo.md",
-    "2. PSP/1. Apuntes/Tema 2/02 - Programación Multihilo.md",
-    "2. PSP/1. Apuntes/Tema 2/05 - Practica Barbero.md",
-    "2. PSP/1. Apuntes/Tema 2/04 - Sincronización Wait y Notify.md",
-    "2. PSP/1. Apuntes/Tema 2/03 - Métodos sincronizados.md",
     "2. PSP/Evaluación 1/1. Apuntes/Tema 2/Sin nombre",
-    "2. PSP/1. Apuntes/Tema 2/01 - Creación de procesos en Java.md",
-    "Pasted image 20250422064325.png",
-    "Pasted image 20250417073110.png",
     "x/Pasted image 20250322092734.png",
-    "x/Pasted image 20250215113519.png",
     "x/Pasted image 20250215113735.png",
     "x/Pasted image 20250215113753.png",
     "x/Pasted image 20250124180625.png",
     "x/Pasted image 20250124190907.png",
-    "x/Pasted image 20250124190904.png",
-    "x/Pasted image 20250124185944.png"
+    "x/Pasted image 20250124190904.png"
   ]
 }
