@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "SGE/Examen/Test.md",
+                "file": "1. DI/Evaluación 2/2. Servidor - MongoDB/1. Convertir JSON a MongoDB.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "put",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 374.5,
-    "collapsed": true
+    "width": 374.5
   },
   "right": {
     "id": "8bdbff94108bdb03",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SGE/Examen/Test.md",
+                "file": "1. DI/Evaluación 2/2. Servidor - MongoDB/1. Convertir JSON a MongoDB.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SGE/Examen/Test.md",
+                "file": "1. DI/Evaluación 2/2. Servidor - MongoDB/1. Convertir JSON a MongoDB.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SGE/Examen/Test.md"
+                "file": "1. DI/Evaluación 2/2. Servidor - MongoDB/1. Convertir JSON a MongoDB.md"
               }
             }
           }
@@ -135,8 +134,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -148,48 +146,48 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "dbd8aec4e6509d40",
+  "active": "585d9718c0bab894",
   "lastOpenFiles": [
-    "SGE/Examen/Know Test.md",
-    "SGE/Examen/Test.md",
-    "SGE/Examen/banco_preguntas_odoo_13.md",
-    "AD/2. Apuntes/Tema 5/1. API REST con Spring.md",
-    "1. DI/1. Examen.md",
-    "1. DI/Evaluación 1/Unidad 01 - JavaScript/07 - Promesas.md",
-    "1. DI/Evaluación 1/Unidad 01 - JavaScript/05 - Callbacks.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/03 - Ficheros en Node.md",
+    "1. DI/Evaluación 2/2. Servidor - MongoDB/0. index.js (Cabecera).md",
+    "1. DI/Evaluación 2/2. Servidor - MongoDB/1. Convertir JSON a MongoDB.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/5. DELETE – Eliminar un dato por id.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/4. PUT – Modificar un dato por id.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/3. POST – Añadir un dato.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/2. GET - Obtener un dato por id.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/0. index.js (Cabecera).md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/1. GET - Obtener todos los datos.md",
+    "1. DI/Evaluación 2/2. Servidor - MongoDB",
+    "1. DI/Evaluación 2/1. Servidor - JSON/6. JSON - Ejemplo.md",
     "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/04 - Electron remote.md",
-    "1. DI/Evaluación 2/1. Iniciar un proyecto node y servidor express -  borrador.md",
+    "1. DI/Evaluación 2/Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON.md",
+    "1. DI/Evaluación 2/3. Cliente",
+    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones/1. Estructura Cliente Servidor + MongoDB.md",
+    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON.md",
+    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones",
+    "1. DI/Evaluación 2/1. Servidor - JSON",
+    "1. DI/Evaluación 2/Arquitectura de aplicaciones/1. Estructura Cliente Servidor + MongoDB.md",
+    "1. DI/Evaluación 2/Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON 1.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/03 - Photon.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/02.1 - DOM Básicos.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/02 - DOM y Eventos con Electron.md",
+    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/01 - Electron.md",
     "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/00 - Iniciar proyecto.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/05 - Ficheros JSON.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/04 - Servidores en Node.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/02 - Eventos en Node.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/01 - Módulos.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/00. Esquema.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/0. Resumen.md",
-    "1. DI/Evaluación 1/Unidad 02 - Node/02. Ejercicios/05 - Ejercicios con ficheros JSON.md",
-    "SGE/Examen/Parcial 2 - Módulos Odoo.md",
-    "SGE/Examen/Bomberocamion.png",
-    "SGE/Examen/Parcial 2 - Módulos Odoo - Resuelto.md",
+    "1. DI/Evaluación 2/Arquitectura de aplicaciones/1. Proyecto Cliente Servidor + MongoDB.md",
+    "1. DI/Evaluación 2/1. Iniciar un proyecto node y servidor express -  borrador.md",
+    "1. DI/Evaluación 2/Arquitectura de aplicaciones",
     "1. DI/0. Desarrollo de interfaces.md",
+    "Resto/PSP/3. Examen/Examenes/Parcial 1/2022-2023/Examen Filosofos.md",
+    "Resto",
+    "Resto/PSP/3. Examen/Examenes/Parcial 1/2022-2023/Test.md",
+    "Resto/PSP/3. Examen/Examenes/Parcial 1/2022-2023/Ordenar Array.md",
+    "Resto/PSP/3. Examen/Examenes/Parcial 1/2022-2023",
+    "Resto/PSP/3. Examen/Examenes/Parcial 1",
+    "Resto/PSP/3. Examen/Examenes",
+    "Resto/SGE/Examen/Bomberocamion.png",
     "x/Captura de pantalla 2025-01-02 a las 20.22.37.png",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/1. Instalar entorno Odoo.md",
-    "SGE/1. Apuntes/0. Explicación/1. Explicación modelo.md",
-    "SGE/1. Apuntes/1. Desarrollar Módulos/Scaffold - New Proyect/Estructura de un nuevo módulo.md",
-    "SGE/1. Apuntes/2. Inicio - El modelo/1. Campos básicos.md",
-    "SGE/1. Apuntes/4. El controlador/3.1.0 Código fuente/3.2.1 Código fuente.md",
     "x/Pasted image 20250422064325.png",
     "x/Pasted image 20250417073110.png",
-    "2. PSP/3. Examen",
-    "2. PSP/2. Ejercicios/Tema 5",
-    "2. PSP/1. Apuntes/Tema 5",
-    "2. PSP/2. Ejercicios/Tema 4",
-    "2. PSP/1. Apuntes/Tema 4",
-    "2. PSP/2. Ejercicios/Tema 1",
-    "2. PSP/2. Ejercicios/Tema 3",
-    "2. PSP/2. Ejercicios/Tema 2",
-    "2. PSP/1. Apuntes/Tema 3",
-    "2. PSP/Evaluación 1/1. Apuntes/Tema 2/Sin nombre",
+    "Resto/PSP/3. Examen",
     "x/Pasted image 20250322092734.png",
     "x/Pasted image 20250215113735.png",
     "x/Pasted image 20250215113753.png",
