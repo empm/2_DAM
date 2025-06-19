@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. DI/Evaluación 2/1. Servidor - JSON/3. POST – Añadir un dato.md",
+                "file": "1. DI/Examen/4. Aplicación Node-Express-Electron.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "sprea",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "1. DI/Evaluación 2/1. Servidor - JSON/3. POST – Añadir un dato.md",
+                "file": "1. DI/Examen/4. Aplicación Node-Express-Electron.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "1. DI/Evaluación 2/1. Servidor - JSON/3. POST – Añadir un dato.md",
+                "file": "1. DI/Examen/4. Aplicación Node-Express-Electron.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "1. DI/Evaluación 2/1. Servidor - JSON/3. POST – Añadir un dato.md"
+                "file": "1. DI/Examen/4. Aplicación Node-Express-Electron.md"
               }
             }
           }
@@ -148,46 +148,46 @@
   },
   "active": "585d9718c0bab894",
   "lastOpenFiles": [
-    "1. DI/Evaluación 2/1. Servidor - JSON/5. DELETE – Eliminar un dato por id.md",
+    "1. DI/Examen/0. Preguntas examen.md",
+    "1. DI/Examen/4. Aplicación Node-Express-Electron.md",
+    "1. DI/Examen/3. Modulos de node - borrador.md",
+    "1. DI/Examen/2. Arrays.md",
+    "1. DI/Examen/1. Ejercicios promesas.md",
+    "1. DI/Examen/Eval 2/Preguntas examen 2.md",
+    "1. DI/0. Desarrollo de interfaces.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/6. Puerto de escucha.md",
+    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON.md",
+    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones/1. Estructura Cliente Servidor + MongoDB.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/04 - Servidores en Node.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/03 - Ficheros en Node.md",
+    "1. DI/Evaluación 1/Unidad 02 - Node/01. Apuntes/01 - Módulos.md",
+    "1. DI/1. Examen.md",
+    "1. DI/Examen/Prueba md.md",
     "1. DI/Evaluación 2/1. Servidor - JSON/4. PUT – Modificar un dato por id.md",
-    "1. DI/Evaluación 2/1. Servidor - JSON/3. POST – Añadir un dato.md",
-    "1. DI/Evaluación 2/3. Cliente/0. Estructura básica.md",
+    "1. DI/Evaluación 2/1. Servidor - JSON/5. DELETE – Eliminar un dato por id.md",
     "1. DI/Evaluación 2/2. Servidor - MongoDB/1. Convertir JSON a MongoDB.md",
     "1. DI/Evaluación 2/2. Servidor - MongoDB/0. index.js (Cabecera).md",
+    "1. DI/Evaluación 2/3. Cliente/0. Estructura básica.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/11. Método reduce, Spread y Rest.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/06 - Clases.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/03 - Array.md",
+    "1. DI/Evaluación 1/Unidad 01 - JavaScript/07 - Promesas.md",
+    "1. DI/Examen/Prueba md copia.txt",
+    "1. DI/Examen/Prueba md copia.md",
+    "1. DI/Examen/Eval 2",
     "1. DI/Evaluación 2/1. Servidor - JSON/8. Obtener datos de OS.md",
-    "1. DI/Evaluación 2/1. Servidor - JSON/7. JSON - Ejemplo.md",
-    "1. DI/Evaluación 2/1. Servidor - JSON/6. Puerto de escucha.md",
-    "1. DI/Evaluación 2/1. Servidor - JSON/2. GET - Obtener un dato por id.md",
-    "1. DI/Evaluación 2/1. Servidor - JSON/1. GET - Obtener todos los datos.md",
-    "1. DI/Evaluación 2/1. Servidor - JSON/0. index.js (Cabecera).md",
-    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON.md",
-    "1. DI/Evaluación 2/1. Iniciar un proyecto node y servidor express -  borrador.md",
+    "1. DI/Examen/Eval 1",
+    "1. DI/Examen",
     "1. DI/Evaluación 2/2. Servidor - MongoDB",
-    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/04 - Electron remote.md",
-    "1. DI/Evaluación 2/Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON.md",
     "1. DI/Evaluación 2/3. Cliente",
-    "1. DI/Evaluación 2/0. Arquitectura de aplicaciones/1. Estructura Cliente Servidor + MongoDB.md",
     "1. DI/Evaluación 2/0. Arquitectura de aplicaciones",
     "1. DI/Evaluación 2/1. Servidor - JSON",
-    "1. DI/Evaluación 2/Arquitectura de aplicaciones/1. Estructura Cliente Servidor + MongoDB.md",
-    "1. DI/Evaluación 2/Arquitectura de aplicaciones/0. Estructura Cliente Servidor + JSON 1.md",
-    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/03 - Photon.md",
-    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/02.1 - DOM Básicos.md",
-    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/02 - DOM y Eventos con Electron.md",
-    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/01 - Electron.md",
-    "1. DI/Evaluación 1/Unidad 03 - Electron/01. Apuntes/00 - Iniciar proyecto.md",
-    "1. DI/Evaluación 2/Arquitectura de aplicaciones/1. Proyecto Cliente Servidor + MongoDB.md",
     "1. DI/Evaluación 2/Arquitectura de aplicaciones",
-    "1. DI/0. Desarrollo de interfaces.md",
     "Resto",
-    "Resto/PSP/3. Examen/Examenes/Parcial 1/2022-2023",
-    "Resto/PSP/3. Examen/Examenes/Parcial 1",
-    "Resto/PSP/3. Examen/Examenes",
     "Resto/SGE/Examen/Bomberocamion.png",
     "x/Captura de pantalla 2025-01-02 a las 20.22.37.png",
     "x/Pasted image 20250422064325.png",
     "x/Pasted image 20250417073110.png",
-    "Resto/PSP/3. Examen",
     "x/Pasted image 20250322092734.png",
     "x/Pasted image 20250215113735.png",
     "x/Pasted image 20250215113753.png",
